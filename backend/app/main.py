@@ -20,7 +20,6 @@ from app.services.openai_service import AIClient, OpenAIService
 
 log = logging.getLogger(__name__)
 
-
 def create_app(settings: Settings | None = None, ai: AIClient | None = None,
                contact_store: ContactStore | None = None) -> FastAPI:
     configure_logging()
