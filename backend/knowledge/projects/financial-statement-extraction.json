@@ -1,0 +1,39 @@
+{
+  "id": "financial-statement-extraction",
+  "title": "Financial Statement Extraction",
+  "category": "Document Intelligence / Financial Data Processing",
+  "filters": ["Document Intelligence", "Data Processing"],
+  "featured": false,
+  "employer": "jhs-associates",
+  "confidential": true,
+  "aliases": ["financial statement", "financial statements", "pdfplumber", "balance sheet", "pdf tables"],
+  "summary": "A pipeline using pdfplumber to support structured extraction from financial statement PDFs.",
+  "technologies": ["pdfplumber"],
+  "overview": "A document-intelligence pipeline developed at JHS & Associates LLP that uses pdfplumber to support structured extraction from financial statement PDFs.",
+  "problem": "Financial statements are commonly distributed as PDFs, which are not directly usable as structured data. Extraction makes their contents available for downstream processing.",
+  "approach": [
+    "Developed a financial statement extraction pipeline using pdfplumber to support structured extraction from PDF documents."
+  ],
+  "architecture": [
+    {"label": "PDF parsing", "detail": "pdfplumber extracts content from PDF documents.", "status": "documented"},
+    {"label": "Rest of the stack, extracted fields, output format and use of LLMs", "detail": "Not specified in the source material.", "status": "unspecified"}
+  ],
+  "workflow": [
+    {"step": "A financial statement PDF is read with pdfplumber.", "status": "documented"},
+    {"step": "Structured data is extracted. The exact fields are not specified.", "status": "unspecified"}
+  ],
+  "contribution": {
+    "type": "Developed",
+    "items": ["Developed the financial statement extraction pipeline using pdfplumber."]
+  },
+  "limitations": [
+    "Only pdfplumber is documented. No additional stack or extraction capability is claimed.",
+    "No accuracy or volume figures are available."
+  ],
+  "future_improvements": [
+    "Possible direction: field-level evaluation against hand-labelled statements."
+  ],
+  "related_skills": ["pdfplumber", "PDF Extraction", "Structured Data Extraction"],
+  "related_projects": ["invoice-extraction", "payroll-automation"],
+  "links": []
+}

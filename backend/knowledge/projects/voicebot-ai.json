@@ -1,0 +1,99 @@
+{
+  "featured": false,
+  "employer": null,
+  "confidential": false,
+  "links": [
+    {
+      "label": "GitHub repository",
+      "url": "https://github.com/VasuGadde0203/My-Voicebot-AI"
+    }
+  ],
+  "future_improvements": [],
+  "aliases": [
+    "voice bot",
+    "voicebot",
+    "speech to text",
+    "text to speech",
+    "assemblyai",
+    "resume persona"
+  ],
+  "id": "voicebot-ai",
+  "title": "VoiceBot AI",
+  "category": "Conversational AI",
+  "filters": [
+    "Applied AI",
+    "Backend Development"
+  ],
+  "summary": "A personal project: a voice assistant that transcribes speech, answers from a resume-based persona and replies in text and audio.",
+  "technologies": [
+    "Python",
+    "FastAPI",
+    "Azure OpenAI",
+    "AssemblyAI",
+    "Google Speech Recognition",
+    "gTTS"
+  ],
+  "overview": "An interactive voice-based assistant. Users speak or pick predefined questions; the app transcribes the audio, generates an answer and returns it as text and playable audio.",
+  "problem": "Conversations are more natural by voice. This project connects speech-to-text, a language model and text-to-speech in one web interface.",
+  "approach": [
+    "AssemblyAI provides speech-to-text, with a fallback to Google Speech Recognition.",
+    "Azure OpenAI generates answers; responses are based on a provided resume text.",
+    "Responses are converted to audio and played back in the browser.",
+    "A responsive web interface shows the conversation in real time."
+  ],
+  "architecture": [
+    {
+      "label": "Backend",
+      "detail": "FastAPI application with a Dockerfile.",
+      "status": "documented"
+    },
+    {
+      "label": "Speech services",
+      "detail": "AssemblyAI for transcription (Google Speech Recognition fallback) and text-to-speech for audio replies.",
+      "status": "documented"
+    },
+    {
+      "label": "Language model",
+      "detail": "Azure OpenAI, answering from a resume-based persona.",
+      "status": "documented"
+    },
+    {
+      "label": "Latency and accuracy",
+      "detail": "Not specified.",
+      "status": "unspecified"
+    }
+  ],
+  "workflow": [
+    {
+      "step": "The user records audio or selects a predefined question.",
+      "status": "documented"
+    },
+    {
+      "step": "Speech is transcribed to text.",
+      "status": "documented"
+    },
+    {
+      "step": "The model answers from the resume text and the reply is returned as text and audio.",
+      "status": "documented"
+    }
+  ],
+  "contribution": {
+    "type": "Built",
+    "items": [
+      "Built this personal project, per the public repository."
+    ]
+  },
+  "limitations": [
+    "Details come from the project's public README on GitHub; no usage numbers, accuracy figures or deployment results are claimed."
+  ],
+  "related_skills": [
+    "FastAPI",
+    "OpenAI API",
+    "Conversational AI",
+    "Prompt Engineering"
+  ],
+  "related_projects": [
+    "gita-chatbot",
+    "personal-research-assistant"
+  ]
+}

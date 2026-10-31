@@ -1,0 +1,43 @@
+{
+  "id": "compliance-signals",
+  "title": "Compliance Signals Intelligence Tool",
+  "category": "Applied AI / Document Intelligence",
+  "filters": ["Applied AI", "Document Intelligence", "Backend Development"],
+  "featured": true,
+  "employer": "jhs-associates",
+  "confidential": true,
+  "aliases": ["compliance signals", "risk signals", "compliance tool", "gpt-4o tool"],
+  "summary": "A tool built with FastAPI, MongoDB and GPT-4o to identify and surface risk signals from business documents.",
+  "technologies": ["Python", "FastAPI", "MongoDB", "GPT-4o"],
+  "overview": "The Compliance Signals Intelligence tool identifies and surfaces risk signals from business documents. It was developed at JHS & Associates LLP using FastAPI, MongoDB and GPT-4o.",
+  "problem": "Business documents can contain indications of risk that are easy to miss in manual review. The tool's purpose is to help surface such signals for people to review.",
+  "approach": [
+    "Developed a tool to identify and surface risk signals from business documents.",
+    "Used FastAPI for the backend service, MongoDB for storage, and GPT-4o for language understanding."
+  ],
+  "architecture": [
+    {"label": "Backend", "detail": "FastAPI service.", "status": "documented"},
+    {"label": "Database", "detail": "MongoDB.", "status": "documented"},
+    {"label": "LLM", "detail": "GPT-4o is used to identify risk signals.", "status": "documented"},
+    {"label": "Document ingestion, prompt design, signal taxonomy, data models and output format", "detail": "Not specified in the source material.", "status": "unspecified"}
+  ],
+  "workflow": [
+    {"step": "Business documents are supplied to the tool.", "status": "documented"},
+    {"step": "Risk signals are identified and surfaced. The detailed steps are not specified.", "status": "unspecified"}
+  ],
+  "contribution": {
+    "type": "Developed",
+    "items": ["Developed the Compliance Signals Intelligence tool using FastAPI, MongoDB and GPT-4o."]
+  },
+  "limitations": [
+    "The tool surfaces signals; it is not a legal compliance certification and does not guarantee detection of every risk.",
+    "Architectural details beyond the documented stack are unspecified.",
+    "Company and document specifics are confidential and not published."
+  ],
+  "future_improvements": [
+    "Possible direction: a labelled evaluation set to measure precision and recall of surfaced signals."
+  ],
+  "related_skills": ["GPT-4o", "FastAPI", "MongoDB", "LLM-Based Validation", "Prompt Engineering"],
+  "related_projects": ["invoice-extraction"],
+  "links": []
+}

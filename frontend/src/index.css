@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/space-grotesk";
+
+@theme {
+  --color-bg: #2a211c;
+  --color-surface: #332921;
+  --color-surface-2: #3d3229;
+  --color-line: #54463c;
+  --color-ink: #f6ebdd;
+  --color-muted: #c9b8a5;
+  --color-accent: #f09a6f;
+  --color-accent-strong: #e9895a;
+  --color-on-accent: #2a211c;
+  --color-sage: #8fd0a8;
+  --color-gold: #e8c476;
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --font-display: "Space Grotesk Variable", "Inter Variable", system-ui, sans-serif;
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+::selection {
+  background: color-mix(in srgb, var(--color-accent-strong) 55%, transparent);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  background: var(--color-accent-strong);
+  color: var(--color-on-accent);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+.dot-grid {
+  background-image:
+    radial-gradient(ellipse at 85% 0%, color-mix(in srgb, #e9895a 16%, transparent) 0%, transparent 55%),
+    radial-gradient(color-mix(in srgb, var(--color-ink) 10%, transparent) 1px, transparent 1px);
+  background-size: auto, 28px 28px;
+  mask-image: radial-gradient(ellipse at 70% 20%, #000 0%, transparent 75%);
+}
+
+button:not(:disabled),
+[role="button"],
+a[href],
+summary,
+label[for] {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+/* Hero visual */
+@keyframes orbit-spin {
+  to { transform: rotate(360deg); }
+}
+.orbit-arc {
+  background: conic-gradient(from 0deg, transparent 0 55%, color-mix(in srgb, var(--color-accent-strong) 90%, transparent) 85%, transparent 100%);
+  mask-image: radial-gradient(circle, transparent 62%, #000 63%, #000 65%, transparent 66%);
+  animation: orbit-spin 14s linear infinite;
+}
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+.float-chip { animation: float-y 5s ease-in-out infinite; }
+@keyframes caret {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.caret { animation: caret 1.1s steps(1) infinite; }
+.glass {
+  background: color-mix(in srgb, var(--color-surface) 78%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+button,
+a {
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+button:not(:disabled):active {
+  transform: scale(0.98);
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+.fade-up { animation: fade-up 0.5s ease-out both; }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.typing-dot { animation: pulse-dot 1.2s ease-in-out infinite; }
+.typing-dot:nth-child(2) { animation-delay: 0.15s; }
+.typing-dot:nth-child(3) { animation-delay: 0.3s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.prose-chat > :first-child { margin-top: 0; }
+.prose-chat > :last-child { margin-bottom: 0; }
+.prose-chat p { margin: 0.5rem 0; }
+.prose-chat strong { font-weight: 600; color: var(--color-ink); }
+.prose-chat li { margin: 0.3rem 0; padding-left: 0.15rem; }
+.prose-chat li::marker { color: var(--color-accent); }
+.prose-chat ul { list-style: disc; padding-left: 1.2rem; margin: 0.4rem 0; }
+.prose-chat ol { list-style: decimal; padding-left: 1.2rem; margin: 0.4rem 0; }
+.prose-chat a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 2px; }
+.prose-chat code { background: var(--color-surface-2); padding: 0.1rem 0.3rem; border-radius: 4px; font-size: 0.85em; }
+.prose-chat pre { background: var(--color-surface-2); padding: 0.6rem; border-radius: 8px; overflow-x: auto; }

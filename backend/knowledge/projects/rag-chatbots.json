@@ -1,0 +1,57 @@
+{
+  "id": "rag-chatbots",
+  "title": "RAG-Based Chatbot Systems",
+  "category": "Generative AI / Retrieval-Augmented Generation",
+  "filters": ["Generative AI and RAG", "Applied AI"],
+  "featured": true,
+  "employer": null,
+  "confidential": false,
+  "aliases": ["rag", "retrieval augmented generation", "chatbot", "chatbots", "faiss", "pinecone", "crypto research agent", "lstm", "query routing", "conversational agent", "embeddings", "vector search"],
+  "summary": "Retrieval-Augmented Generation chatbots built on document ingestion, chunking, embeddings and vector search, plus a crypto research agent and a query-routing conversational agent.",
+  "technologies": ["Python", "FastAPI", "OpenAI API", "FAISS", "Pinecone", "MongoDB"],
+  "overview": "A body of work on RAG chatbots: ingesting documents, splitting them into chunks, embedding them, searching them by vector similarity and passing the retrieved content to an LLM so responses are grounded in relevant knowledge-base content. It also includes a crypto research agent that combines RAG with LSTM-based forecasting, and a conversational agent with query routing.",
+  "problem": "A language model on its own does not know an organisation's documents and can produce unsupported answers. Retrieval gives the model relevant source material at question time so that responses can be grounded in it.",
+  "approach": [
+    "Developed Retrieval-Augmented Generation chatbots using document ingestion, text chunking, embeddings, and vector search.",
+    "Integrated retrieval pipelines with LLMs to generate responses grounded in relevant document or knowledge-base content.",
+    "Worked on a crypto research agent combining RAG with LSTM-based forecasting.",
+    "Developed a conversational agent with query-routing capabilities to support different types of user requests."
+  ],
+  "architecture": [
+    {"label": "Ingestion and chunking", "detail": "Documents are ingested and split into text chunks.", "status": "documented"},
+    {"label": "Embeddings and vector search", "detail": "Chunks are embedded and searched by vector similarity.", "status": "documented"},
+    {"label": "LLM generation", "detail": "Retrieved content is supplied to an LLM to generate responses grounded in it.", "status": "documented"},
+    {"label": "Technologies", "detail": "The project lists Python, FastAPI, OpenAI API, FAISS, Pinecone and MongoDB. These were not necessarily all used together in a single application.", "status": "documented"},
+    {"label": "Retrieval vs generation vs context", "detail": "In general: retrieval finds relevant source passages; generation writes the answer from them; conversational context carries earlier turns so follow-up questions can be interpreted. This is a general explanation, not a description of each system's internals.", "status": "general"},
+    {"label": "Query routing", "detail": "A conversational agent routed different types of user requests. The routing mechanism is not specified.", "status": "unspecified"}
+  ],
+  "workflow": [
+    {"step": "Ingest documents and split them into chunks.", "status": "documented"},
+    {"step": "Generate embeddings for chunks and store them for vector search.", "status": "documented"},
+    {"step": "At question time, retrieve the most relevant chunks by vector search.", "status": "documented"},
+    {"step": "Pass the retrieved content to an LLM to generate a grounded response.", "status": "documented"},
+    {"step": "For the conversational agent, route the request according to its type.", "status": "documented"}
+  ],
+  "contribution": {
+    "type": "Developed and worked on",
+    "items": [
+      "Developed RAG chatbots with document ingestion, text chunking, embeddings and vector search.",
+      "Integrated retrieval pipelines with LLMs for grounded responses.",
+      "Worked on a crypto research agent combining RAG with LSTM-based forecasting.",
+      "Developed a conversational agent with query routing."
+    ]
+  },
+  "limitations": [
+    "No verified counts of chatbots built, user numbers, accuracy metrics or deployment results are available, so none are claimed.",
+    "The resume does not attribute this project to a specific employer.",
+    "The crypto research agent is described only as work 'worked on'; its forecasting results are not documented.",
+    "This page describes past project experience, not the Ask Vasu AI assistant on this website, which is a separate new build."
+  ],
+  "future_improvements": [
+    "Possible direction: a systematic retrieval and answer-grounding evaluation set.",
+    "Possible direction: hybrid retrieval (semantic plus keyword) and reranking."
+  ],
+  "related_skills": ["Retrieval-Augmented Generation", "Embeddings", "Vector Search", "FAISS", "Pinecone", "Document Chunking", "OpenAI API", "Conversational AI"],
+  "related_projects": ["recruitment-automation", "invoice-extraction"],
+  "links": []
+}

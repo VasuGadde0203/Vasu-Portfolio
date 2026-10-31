@@ -1,0 +1,75 @@
+{
+  "featured": true,
+  "employer": "jhs-associates",
+  "confidential": true,
+  "links": [],
+  "future_improvements": [
+    "Possible direction: a validation step that flags low-confidence extractions for human review."
+  ],
+  "aliases": [
+    "expense sheet",
+    "expense sheets",
+    "expenses",
+    "expense extraction"
+  ],
+  "id": "expense-sheet-extraction",
+  "title": "Expense Sheet Document Automation",
+  "category": "Document Intelligence & Automation",
+  "filters": [
+    "Document Intelligence",
+    "Automation",
+    "Applied AI"
+  ],
+  "summary": "A document automation workflow that extracts details from expense sheets using AI and OCR.",
+  "technologies": [
+    "OCR",
+    "AI-based extraction"
+  ],
+  "overview": "A document automation project at JHS & Associates LLP in which details are extracted from expense sheets using AI and OCR.",
+  "problem": "Expense sheets arrive as documents, and keying their details into a system by hand is slow and error-prone. OCR and AI-based extraction can read the sheets and pull out the details automatically.",
+  "approach": [
+    "Developed a document automation workflow that extracts details from expense sheets using AI and OCR."
+  ],
+  "architecture": [
+    {
+      "label": "OCR and AI extraction",
+      "detail": "OCR reads the expense sheets and AI is used to extract the details from them.",
+      "status": "documented"
+    },
+    {
+      "label": "Specific models, OCR engine, fields extracted, validation and output format",
+      "detail": "Not specified. Confidential employer information is not published.",
+      "status": "unspecified"
+    }
+  ],
+  "workflow": [
+    {
+      "step": "Expense sheets are read with OCR.",
+      "status": "documented"
+    },
+    {
+      "step": "AI extracts the details from the sheets.",
+      "status": "documented"
+    }
+  ],
+  "contribution": {
+    "type": "Developed",
+    "items": [
+      "Developed the document automation workflow that extracts details from expense sheets using AI and OCR."
+    ]
+  },
+  "limitations": [
+    "The OCR engine, AI model, extracted fields, volumes and accuracy are not documented, so none are claimed.",
+    "Client and company-specific details are anonymised."
+  ],
+  "related_skills": [
+    "OCR",
+    "Structured Data Extraction",
+    "Workflow Automation",
+    "Python"
+  ],
+  "related_projects": [
+    "invoice-extraction",
+    "financial-statement-extraction"
+  ]
+}

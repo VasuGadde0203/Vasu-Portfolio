@@ -1,0 +1,101 @@
+{
+  "featured": true,
+  "employer": null,
+  "confidential": false,
+  "links": [
+    {
+      "label": "GitHub repository",
+      "url": "https://github.com/VasuGadde0203/Personal-Research-Assistant"
+    }
+  ],
+  "future_improvements": [],
+  "aliases": [
+    "research assistant",
+    "serpapi",
+    "jwt",
+    "citations",
+    "web search"
+  ],
+  "id": "personal-research-assistant",
+  "title": "Personal Research Assistant",
+  "category": "Generative AI Application",
+  "filters": [
+    "Applied AI",
+    "Backend Development"
+  ],
+  "summary": "A personal project: a web app that answers research queries with AI, stores conversations and links the sources it used.",
+  "technologies": [
+    "Python",
+    "FastAPI",
+    "MongoDB",
+    "Azure OpenAI",
+    "SerpAPI",
+    "JWT",
+    "HTML/CSS/JavaScript"
+  ],
+  "overview": "A web-based research assistant. The frontend uses HTML, CSS and JavaScript; the backend is FastAPI with MongoDB for data persistence. Research responses include linked sources.",
+  "problem": "Researching a topic means searching, reading and keeping track of sources. This project wraps AI-powered answers, source links and saved conversation history in one app.",
+  "approach": [
+    "A /research endpoint returns AI-powered responses to research queries.",
+    "A /store_conversations endpoint saves and manages chat sessions in MongoDB.",
+    "JWT-based authentication protects access.",
+    "Research responses include clickable citations that link to sources."
+  ],
+  "architecture": [
+    {
+      "label": "Frontend",
+      "detail": "HTML, CSS and JavaScript, responsive for desktop and mobile.",
+      "status": "documented"
+    },
+    {
+      "label": "Backend",
+      "detail": "FastAPI with MongoDB for conversation storage and JWT authentication.",
+      "status": "documented"
+    },
+    {
+      "label": "AI and search services",
+      "detail": "The README lists Azure OpenAI and SerpAPI configuration. Exactly how search results feed the model is not described.",
+      "status": "documented"
+    },
+    {
+      "label": "Retrieval method",
+      "detail": "Not specified; this page does not claim a RAG pipeline.",
+      "status": "unspecified"
+    }
+  ],
+  "workflow": [
+    {
+      "step": "A signed-in user submits a research query.",
+      "status": "documented"
+    },
+    {
+      "step": "The /research endpoint returns an AI-generated answer with linked sources.",
+      "status": "documented"
+    },
+    {
+      "step": "Conversations can be stored through /store_conversations.",
+      "status": "documented"
+    }
+  ],
+  "contribution": {
+    "type": "Built",
+    "items": [
+      "Built this personal project end to end (frontend, FastAPI backend and MongoDB storage), per the public repository."
+    ]
+  },
+  "limitations": [
+    "Details come from the project's public README on GitHub; no usage numbers, accuracy figures or deployment results are claimed.",
+    "Personal project, not production client work."
+  ],
+  "related_skills": [
+    "FastAPI",
+    "MongoDB",
+    "OpenAI API",
+    "REST APIs",
+    "Prompt Engineering"
+  ],
+  "related_projects": [
+    "rag-chatbots",
+    "gita-chatbot"
+  ]
+}

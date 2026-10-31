@@ -1,0 +1,95 @@
+{
+  "featured": false,
+  "employer": null,
+  "confidential": false,
+  "links": [
+    {
+      "label": "GitHub repository",
+      "url": "https://github.com/VasuGadde0203/AI-Powered-Document-Analyzer"
+    }
+  ],
+  "future_improvements": [],
+  "aliases": [
+    "document analyzer",
+    "pdf summary",
+    "pdf qa",
+    "streamlit",
+    "gemini",
+    "pypdf2"
+  ],
+  "id": "ai-document-analyzer",
+  "title": "AI-Powered Document Analyzer",
+  "category": "Document Intelligence",
+  "filters": [
+    "Document Intelligence",
+    "Applied AI"
+  ],
+  "summary": "A personal project: a Streamlit app that summarises uploaded PDFs and answers questions about them using Gemini.",
+  "technologies": [
+    "Python",
+    "Streamlit",
+    "Gemini",
+    "PyPDF2"
+  ],
+  "overview": "A web application where users upload a PDF and get a short summary, a long summary, or answers to their own questions about the document.",
+  "problem": "Long PDFs are slow to read. Summaries and question answering let a reader get to the relevant content faster.",
+  "approach": [
+    "PDF text is extracted with PyPDF2.",
+    "A generative AI model (Gemini) produces short and long summaries and answers questions.",
+    "A Streamlit interface supports drag-and-drop upload."
+  ],
+  "architecture": [
+    {
+      "label": "Interface",
+      "detail": "Streamlit app with file upload.",
+      "status": "documented"
+    },
+    {
+      "label": "Extraction",
+      "detail": "PyPDF2 reads the PDF text.",
+      "status": "documented"
+    },
+    {
+      "label": "Model",
+      "detail": "Gemini generates the summaries and answers.",
+      "status": "documented"
+    },
+    {
+      "label": "Handling of long or scanned documents",
+      "detail": "Not specified; no OCR is documented.",
+      "status": "unspecified"
+    }
+  ],
+  "workflow": [
+    {
+      "step": "The user uploads a PDF.",
+      "status": "documented"
+    },
+    {
+      "step": "Text is extracted from the PDF.",
+      "status": "documented"
+    },
+    {
+      "step": "The user chooses a short summary, a long summary or asks a question, and the model responds.",
+      "status": "documented"
+    }
+  ],
+  "contribution": {
+    "type": "Built",
+    "items": [
+      "Built this personal project, per the public repository."
+    ]
+  },
+  "limitations": [
+    "Details come from the project's public README on GitHub; no usage numbers, accuracy figures or deployment results are claimed."
+  ],
+  "related_skills": [
+    "PDF Extraction",
+    "Large Language Models",
+    "Prompt Engineering"
+  ],
+  "related_projects": [
+    "financial-statement-extraction",
+    "personal-research-assistant"
+  ]
+}

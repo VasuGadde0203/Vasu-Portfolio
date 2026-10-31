@@ -1,0 +1,282 @@
+{
+  "_comment": "Canonical, resume-derived profile. Edit here, then run `python scripts/sync_frontend_data.py` and `python -m app.rag.ingest`. Do not add confidential employer information.",
+  "name": "Vasu Ramesh Gadde",
+  "display_name": "Vasu Gadde",
+  "title": "Applied AI Engineer | Generative AI | RAG | Document Intelligence & AI Automation",
+  "headline": "I Build Practical AI Systems That Solve Real Problems.",
+  "tagline": "Applied AI Engineer focused on Generative AI, RAG, document intelligence, conversational AI, and Python backend development.",
+  "summary": "Applied AI Engineer with 2+ years of combined experience developing Generative AI applications, document intelligence pipelines, and workflow automation solutions for financial and HR operations. Experienced in building hybrid OCR and LLM-based document processing systems, Retrieval-Augmented Generation chatbots, conversational AI applications, and backend services using Python, FastAPI, and MongoDB. Hands-on experience integrating local and cloud-based LLMs, including Qwen2.5 and GPT-4o, for structured data extraction, document validation, information retrieval, and business process automation. Familiar with AWS and Docker-based deployment workflows.",
+  "contact": {
+    "email": "vasugadde0203@gmail.com",
+    "phone": null,
+    "show_phone": false,
+    "location": "Mumbai, Maharashtra, India",
+    "show_location": true,
+    "linkedin": "https://linkedin.com/in/vasu-gadde",
+    "github": "https://github.com/VasuGadde0203",
+    "resume_url": "/Vasu_Resume.pdf",
+    "_note": "LinkedIn and GitHub URLs were read from the hyperlinks embedded in Vasu_Resume.pdf. Set to null to hide. Phone is private by default: set `phone` and `show_phone` to publish it."
+  },
+  "proof_points": [
+    "2+ years of combined experience, as stated in the resume",
+    "Professional experience building AI applications",
+    "Experience with RAG and semantic retrieval",
+    "Experience with hybrid OCR and LLM-based document processing"
+  ],
+  "biography": [
+    "I'm an Applied AI Engineer based in Mumbai. My work sits where language models meet real business data: financial and HR documents, internal knowledge, and the backend services that connect them.",
+    "My documented experience spans two roles: a Machine Learning Intern at Supermoney Advisors Private Limited (August 2024 – July 2025), where I built conversational AI services, and my current role as Data Scientist & AI Engineer at JHS & Associates LLP (July 2025 – Present), where I work on document intelligence, workflow automation and FastAPI backend projects.",
+    "Across both roles the recurring themes are Retrieval-Augmented Generation, hybrid OCR and LLM pipelines, structured data extraction, and Python backend development with FastAPI and MongoDB."
+  ],
+  "career_journey": [
+    {
+      "period": "09/2021 – 05/2024",
+      "label": "BSc in Information Technology, University of Mumbai",
+      "detail": "Undergraduate degree in Information Technology."
+    },
+    {
+      "period": "08/2024 – 07/2025",
+      "label": "Machine Learning Intern, Supermoney Advisors Private Limited",
+      "detail": "Built business-specific conversational AI systems and retrieval-based response generation with the OpenAI API, FastAPI and MongoDB."
+    },
+    {
+      "period": "07/2025 – Present",
+      "label": "Data Scientist & AI Engineer, JHS & Associates LLP",
+      "detail": "Document intelligence, LLM-based validation, workflow automation and FastAPI backend work for financial and HR operations."
+    }
+  ],
+  "current_focus": "Generative AI applications, Retrieval-Augmented Generation, hybrid OCR and LLM document processing, conversational AI, and Python/FastAPI backend development.",
+  "engineering_interests": [
+    "Retrieval-Augmented Generation and semantic retrieval",
+    "Hybrid local/cloud LLM architectures",
+    "Document intelligence: OCR, PDF extraction and structured output",
+    "Conversational AI and query routing",
+    "Workflow automation for financial and HR operations",
+    "Modular, maintainable Python backends"
+  ],
+  "career_interests": {
+    "roles": [
+      "Applied AI Engineer",
+      "Generative AI / RAG engineering",
+      "Document intelligence and AI automation"
+    ],
+    "note": "Derived from Vasu's professional title and stated focus areas. No specific compensation, location or employer preferences have been provided, so none are stated."
+  },
+  "experience": [
+    {
+      "id": "jhs-associates",
+      "employer": "JHS & Associates LLP",
+      "title": "Data Scientist & AI Engineer",
+      "start": "07/2025",
+      "end": "Present",
+      "dates": "July 2025 – Present",
+      "location": "Mumbai, India",
+      "summary": "Current role focused on document intelligence, LLM-based validation, workflow automation and FastAPI backend work for financial and HR operations.",
+      "responsibilities": [
+        {
+          "verb": "Developed",
+          "text": "Developed a hybrid OCR and LLM-based invoice classification pipeline using Surya OCR and local Qwen2.5, with OpenAI API fallback to support document processing and improve output stability.",
+          "projects": ["invoice-extraction"]
+        },
+        {
+          "verb": "Resolved",
+          "text": "Resolved production dependency conflicts within the document processing pipeline to stabilize system behavior.",
+          "projects": []
+        },
+        {
+          "verb": "Automated",
+          "text": "Automated payroll review and spreadsheet reconciliation workflows using Python, Pandas, and an OPE approval PDF export system.",
+          "projects": ["payroll-automation"]
+        },
+        {
+          "verb": "Developed",
+          "text": "Developed a Compliance Signals Intelligence tool using FastAPI, MongoDB, and GPT-4o to identify and surface risk signals from business documents.",
+          "projects": ["compliance-signals"]
+        },
+        {
+          "verb": "Worked on",
+          "text": "Worked on an LLM-based document validation system with pluggable model providers, including Hugging Face and Groq.",
+          "projects": []
+        },
+        {
+          "verb": "Authored",
+          "text": "Authored technical build documentation for a Vendor Payment Management System covering 9 modules and 14 MongoDB schemas.",
+          "projects": ["vendor-payment-management"]
+        },
+        {
+          "verb": "Developed",
+          "text": "Developed a document automation workflow that extracts details from expense sheets using AI and OCR.",
+          "projects": ["expense-sheet-extraction"]
+        },
+        {
+          "verb": "Developed",
+          "text": "Developed a financial statement extraction pipeline using pdfplumber to support structured extraction from PDF documents.",
+          "projects": ["financial-statement-extraction"]
+        }
+      ],
+      "technologies": [
+        "Python", "FastAPI", "MongoDB", "Pandas", "Surya OCR", "Qwen2.5", "OpenAI API", "GPT-4o",
+        "Hugging Face", "Groq", "pdfplumber"
+      ],
+      "related_projects": [
+        "invoice-extraction", "payroll-automation", "compliance-signals",
+        "vendor-payment-management", "expense-sheet-extraction", "financial-statement-extraction"
+      ]
+    },
+    {
+      "id": "supermoney-advisors",
+      "employer": "Supermoney Advisors Private Limited",
+      "title": "Machine Learning Intern",
+      "start": "08/2024",
+      "end": "07/2025",
+      "dates": "August 2024 – July 2025",
+      "location": "Mumbai, India",
+      "summary": "Internship centred on business-specific conversational AI and retrieval-based response generation, the foundation for my current focus on RAG and applied AI engineering.",
+      "responsibilities": [
+        {
+          "verb": "Developed",
+          "text": "Developed business-specific conversational AI systems using the OpenAI API and FastAPI for internal analytics and question-answering use cases.",
+          "projects": []
+        },
+        {
+          "verb": "Designed",
+          "text": "Designed intent-aware prompt workflows and retrieval-based response generation to support relevant answers to user queries.",
+          "projects": []
+        },
+        {
+          "verb": "Built",
+          "text": "Built data ingestion workflows using MongoDB and REST APIs to provide application data for chatbot responses.",
+          "projects": []
+        },
+        {
+          "verb": "Integrated",
+          "text": "Integrated AI services with backend systems to support conversational interfaces and business-specific information retrieval.",
+          "projects": []
+        },
+        {
+          "verb": "Deployed",
+          "text": "Deployed AI services on AWS using Docker to package and run application components.",
+          "projects": []
+        }
+      ],
+      "technologies": ["Python", "FastAPI", "OpenAI API", "MongoDB", "REST APIs", "AWS", "Docker"],
+      "related_projects": ["rag-chatbots"],
+      "related_projects_note": "The resume does not state which employer the RAG-Based Chatbot Systems project belongs to; it is listed here because it is thematically related."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "short": "BSc in Information Technology",
+      "institution": "University of Mumbai",
+      "start": "09/2021",
+      "end": "05/2024",
+      "dates": "September 2021 – May 2024",
+      "location": "Thane, India"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Data Science Certification",
+      "provider": "HCL GUVI",
+      "dates": "March 2025 – May 2026",
+      "kind": "Course / certification programme (not a university degree or professional licence)",
+      "coverage": [
+        "Python programming",
+        "SQL",
+        "Statistics",
+        "Exploratory data analysis",
+        "Data visualization",
+        "Machine learning",
+        "Data preprocessing",
+        "Data analysis",
+        "Data-driven problem-solving through hands-on projects"
+      ]
+    }
+  ],
+  "skill_levels": {
+    "professional": "Professional experience",
+    "projects": "Used in documented projects",
+    "familiar": "Familiar with",
+    "exploring": "Currently exploring"
+  },
+  "skills": [
+    {
+      "category": "Programming & Data Processing",
+      "items": [
+        {"name": "Python", "level": "professional", "evidence": "Used across both roles and most documented projects."},
+        {"name": "SQL", "level": "familiar", "evidence": "Listed on the resume and covered in the HCL GUVI Data Science Certification."},
+        {"name": "Pandas", "level": "professional", "evidence": "Used in payroll review and spreadsheet reconciliation workflows at JHS & Associates LLP."},
+        {"name": "NumPy", "level": "familiar", "evidence": "Listed on the resume; no specific project usage is documented."}
+      ]
+    },
+    {
+      "category": "Generative AI & LLMs",
+      "items": [
+        {"name": "Generative AI", "level": "professional", "evidence": "Applied in both roles."},
+        {"name": "Large Language Models", "level": "professional", "evidence": "Integrated local and cloud-based LLMs in document processing and conversational systems."},
+        {"name": "OpenAI API", "level": "professional", "evidence": "Used at Supermoney Advisors and JHS & Associates LLP."},
+        {"name": "GPT-4o", "level": "professional", "evidence": "Used in the Compliance Signals Intelligence tool at JHS & Associates LLP."},
+        {"name": "Qwen2.5", "level": "professional", "evidence": "Local LLM in the hybrid invoice classification pipeline at JHS & Associates LLP."},
+        {"name": "Prompt Engineering", "level": "professional", "evidence": "Intent-aware prompt workflows at Supermoney Advisors."},
+        {"name": "Agentic AI Workflows", "level": "familiar", "evidence": "Listed on the resume; the documented query-routing and research-agent work is the closest related project experience."}
+      ]
+    },
+    {
+      "category": "RAG & Information Retrieval",
+      "items": [
+        {"name": "Retrieval-Augmented Generation", "level": "projects", "evidence": "RAG-Based Chatbot Systems project; retrieval-based response generation at Supermoney Advisors."},
+        {"name": "Embeddings", "level": "projects", "evidence": "RAG-Based Chatbot Systems and Recruitment Automation projects."},
+        {"name": "Vector Search", "level": "projects", "evidence": "RAG-Based Chatbot Systems and Recruitment Automation projects."},
+        {"name": "FAISS", "level": "projects", "evidence": "Listed as a technology of the RAG-Based Chatbot Systems project."},
+        {"name": "Pinecone", "level": "projects", "evidence": "Listed for the RAG-Based Chatbot Systems and Recruitment Automation projects."},
+        {"name": "Document Chunking", "level": "projects", "evidence": "RAG-Based Chatbot Systems project."},
+        {"name": "Semantic Search", "level": "projects", "evidence": "Semantic candidate-job matching in the Recruitment Automation project."}
+      ]
+    },
+    {
+      "category": "Backend Development & Databases",
+      "items": [
+        {"name": "FastAPI", "level": "professional", "evidence": "Used at both employers, including the Compliance Signals tool at JHS & Associates LLP."},
+        {"name": "REST APIs", "level": "professional", "evidence": "Data ingestion workflows at Supermoney Advisors; backend APIs in the Recruitment Automation project."},
+        {"name": "MongoDB", "level": "professional", "evidence": "Used at both employers; 14 MongoDB schemas documented for the Vendor Payment Management System."},
+        {"name": "PostgreSQL", "level": "projects", "evidence": "Database (with the pgvector extension) behind the Ask Vasu AI assistant on this portfolio."}
+      ]
+    },
+    {
+      "category": "Machine Learning & Deep Learning",
+      "items": [
+        {"name": "Machine Learning", "level": "projects", "evidence": "Covered in the HCL GUVI Data Science Certification, which includes hands-on projects."},
+        {"name": "Deep Learning", "level": "projects", "evidence": "LSTM-based forecasting in the crypto research agent and the CryptoLab price forecasting project."}
+      ]
+    },
+    {
+      "category": "AI Application Development",
+      "items": [
+        {"name": "Conversational AI", "level": "professional", "evidence": "Business-specific conversational systems at Supermoney Advisors."},
+        {"name": "Intent Classification", "level": "professional", "evidence": "Intent-aware prompt workflows at Supermoney Advisors."},
+        {"name": "LLM-Based Validation", "level": "professional", "evidence": "LLM-based document validation system with pluggable providers at JHS & Associates LLP."},
+        {"name": "Workflow Automation", "level": "professional", "evidence": "Payroll reconciliation and expense sheet document automation at JHS & Associates LLP."}
+      ]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "items": [
+        {"name": "AWS", "level": "familiar", "evidence": "Resume states familiarity; AI services were deployed on AWS at Supermoney Advisors."},
+        {"name": "Docker", "level": "familiar", "evidence": "Resume states familiarity; used to package AI services at Supermoney Advisors."},
+        {"name": "GitHub Actions", "level": "familiar", "evidence": "Listed on the resume; no specific project usage is documented."}
+      ]
+    },
+    {
+      "category": "Document Intelligence & Automation",
+      "items": [
+        {"name": "OCR", "level": "professional", "evidence": "Hybrid OCR and LLM invoice pipeline at JHS & Associates LLP."},
+        {"name": "Surya OCR", "level": "professional", "evidence": "OCR engine in the invoice classification pipeline."},
+        {"name": "PDF Extraction", "level": "professional", "evidence": "Invoice and financial statement extraction work."},
+        {"name": "pdfplumber", "level": "professional", "evidence": "Financial statement extraction pipeline at JHS & Associates LLP."},
+        {"name": "Invoice Classification", "level": "professional", "evidence": "Hybrid OCR and LLM invoice classification pipeline."},
+        {"name": "Structured Data Extraction", "level": "professional", "evidence": "Invoice, financial statement and expense sheet pipelines."}
+      ]
+    }
+  ]
+}

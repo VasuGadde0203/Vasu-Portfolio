@@ -1,0 +1,38 @@
+{
+  "id": "vendor-payment-management",
+  "title": "Vendor Payment Management System",
+  "category": "Backend Architecture / Documentation",
+  "filters": ["Backend Development"],
+  "featured": false,
+  "employer": "jhs-associates",
+  "confidential": true,
+  "aliases": ["vendor payment", "vendor payments", "build documentation", "technical documentation", "14 mongodb schemas", "9 modules"],
+  "summary": "Technical build documentation for a Vendor Payment Management System covering 9 modules and 14 MongoDB schemas.",
+  "technologies": ["MongoDB"],
+  "overview": "At JHS & Associates LLP I authored the technical build documentation for a Vendor Payment Management System. The documentation covers 9 modules and 14 MongoDB schemas.",
+  "problem": "A multi-module backend needs clear build documentation so that its modules and data models can be understood and implemented consistently.",
+  "approach": [
+    "Authored technical build documentation covering 9 modules and 14 MongoDB schemas."
+  ],
+  "architecture": [
+    {"label": "Scope of documentation", "detail": "9 modules and 14 MongoDB schemas.", "status": "documented"},
+    {"label": "Module names, schema contents, API design and implementation", "detail": "Not specified in the source material.", "status": "unspecified"}
+  ],
+  "workflow": [
+    {"step": "Authored the technical build documentation for the system.", "status": "documented"}
+  ],
+  "contribution": {
+    "type": "Authored (documentation)",
+    "items": ["Authored the technical build documentation. The documented contribution is documentation, not independent implementation of every module."]
+  },
+  "limitations": [
+    "The documented contribution is technical build documentation. Implementation of the modules is not claimed.",
+    "No details of the modules or schemas are published."
+  ],
+  "future_improvements": [
+    "Not applicable to published information; no further plans are documented."
+  ],
+  "related_skills": ["MongoDB", "Technical Documentation", "Backend Architecture"],
+  "related_projects": ["compliance-signals"],
+  "links": []
+}

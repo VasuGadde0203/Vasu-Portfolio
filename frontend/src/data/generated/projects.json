@@ -1,0 +1,1365 @@
+[
+  {
+    "id": "ai-document-analyzer",
+    "title": "AI-Powered Document Analyzer",
+    "category": "Document Intelligence",
+    "filters": [
+      "Document Intelligence",
+      "Applied AI"
+    ],
+    "featured": false,
+    "employer": null,
+    "confidential": false,
+    "aliases": [
+      "document analyzer",
+      "pdf summary",
+      "pdf qa",
+      "streamlit",
+      "gemini",
+      "pypdf2"
+    ],
+    "summary": "A personal project: a Streamlit app that summarises uploaded PDFs and answers questions about them using Gemini.",
+    "technologies": [
+      "Python",
+      "Streamlit",
+      "Gemini",
+      "PyPDF2"
+    ],
+    "overview": "A web application where users upload a PDF and get a short summary, a long summary, or answers to their own questions about the document.",
+    "problem": "Long PDFs are slow to read. Summaries and question answering let a reader get to the relevant content faster.",
+    "approach": [
+      "PDF text is extracted with PyPDF2.",
+      "A generative AI model (Gemini) produces short and long summaries and answers questions.",
+      "A Streamlit interface supports drag-and-drop upload."
+    ],
+    "architecture": [
+      {
+        "label": "Interface",
+        "detail": "Streamlit app with file upload.",
+        "status": "documented"
+      },
+      {
+        "label": "Extraction",
+        "detail": "PyPDF2 reads the PDF text.",
+        "status": "documented"
+      },
+      {
+        "label": "Model",
+        "detail": "Gemini generates the summaries and answers.",
+        "status": "documented"
+      },
+      {
+        "label": "Handling of long or scanned documents",
+        "detail": "Not specified; no OCR is documented.",
+        "status": "unspecified"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "The user uploads a PDF.",
+        "status": "documented"
+      },
+      {
+        "step": "Text is extracted from the PDF.",
+        "status": "documented"
+      },
+      {
+        "step": "The user chooses a short summary, a long summary or asks a question, and the model responds.",
+        "status": "documented"
+      }
+    ],
+    "contribution": {
+      "type": "Built",
+      "items": [
+        "Built this personal project, per the public repository."
+      ]
+    },
+    "limitations": [
+      "Details come from the project's public README on GitHub; no usage numbers, accuracy figures or deployment results are claimed."
+    ],
+    "future_improvements": [],
+    "related_skills": [
+      "PDF Extraction",
+      "Large Language Models",
+      "Prompt Engineering"
+    ],
+    "related_projects": [
+      "financial-statement-extraction",
+      "personal-research-assistant"
+    ],
+    "links": [
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/VasuGadde0203/AI-Powered-Document-Analyzer"
+      }
+    ]
+  },
+  {
+    "id": "class9-science-rag-chatbot",
+    "title": "Class 9 Science RAG Chatbot",
+    "category": "Generative AI / Retrieval-Augmented Generation",
+    "filters": [
+      "Generative AI and RAG",
+      "Applied AI"
+    ],
+    "featured": false,
+    "employer": null,
+    "confidential": false,
+    "aliases": [
+      "class 9",
+      "ncert",
+      "chromadb",
+      "streamlit",
+      "science chatbot",
+      "education"
+    ],
+    "summary": "A personal project: a RAG chatbot that helps Class 9 students with Science questions from NCERT textbook content, adapting answers to proficiency.",
+    "technologies": [
+      "Python",
+      "Azure OpenAI",
+      "ChromaDB",
+      "MongoDB",
+      "Streamlit"
+    ],
+    "overview": "A Retrieval-Augmented Generation chatbot over NCERT Science PDFs. It retrieves relevant chunks from ChromaDB, generates answers with Azure OpenAI GPT-3.5, logs conversations in MongoDB and presents a Streamlit chat interface.",
+    "problem": "Students need answers tied to their textbook and pitched at their level. Retrieval over the textbook content grounds the answers, and proficiency-aware prompts adjust the depth.",
+    "approach": [
+      "Pre-processed PDFs are chunked and stored as embeddings in ChromaDB.",
+      "Semantic search retrieves relevant text chunks for each question.",
+      "Answers adapt to a student's proficiency level (Weak, Neutral, Strong).",
+      "The last 10 conversations from MongoDB are used for context-aware replies.",
+      "The Streamlit UI offers quick prompts, history and expandable retrieved content."
+    ],
+    "architecture": [
+      {
+        "label": "Retrieval",
+        "detail": "ChromaDB vector search with Azure OpenAI embeddings over NCERT Science PDFs.",
+        "status": "documented"
+      },
+      {
+        "label": "Generation",
+        "detail": "Azure OpenAI GPT-3.5 produces proficiency-adapted answers.",
+        "status": "documented"
+      },
+      {
+        "label": "Conversation memory",
+        "detail": "MongoDB logs conversations; recent ones are added to the prompt.",
+        "status": "documented"
+      },
+      {
+        "label": "Interface",
+        "detail": "Streamlit chat UI.",
+        "status": "documented"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "Textbook PDFs are chunked and embedded into ChromaDB.",
+        "status": "documented"
+      },
+      {
+        "step": "A question retrieves the most relevant chunks.",
+        "status": "documented"
+      },
+      {
+        "step": "GPT-3.5 answers at the chosen proficiency level using the retrieved text and recent conversations.",
+        "status": "documented"
+      }
+    ],
+    "contribution": {
+      "type": "Built",
+      "items": [
+        "Built this personal project, per the public repository."
+      ]
+    },
+    "limitations": [
+      "Details come from the project's public README on GitHub; no usage numbers, accuracy figures or deployment results are claimed.",
+      "Answer quality has not been formally evaluated."
+    ],
+    "future_improvements": [],
+    "related_skills": [
+      "Retrieval-Augmented Generation",
+      "Embeddings",
+      "Vector Search",
+      "Prompt Engineering",
+      "MongoDB"
+    ],
+    "related_projects": [
+      "rag-chatbots",
+      "gita-chatbot"
+    ],
+    "links": [
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/VasuGadde0203/LLM-Powered-Knowledge-agent-class-9-"
+      }
+    ]
+  },
+  {
+    "id": "compliance-signals",
+    "title": "Compliance Signals Intelligence Tool",
+    "category": "Applied AI / Document Intelligence",
+    "filters": [
+      "Applied AI",
+      "Document Intelligence",
+      "Backend Development"
+    ],
+    "featured": true,
+    "employer": "jhs-associates",
+    "confidential": true,
+    "aliases": [
+      "compliance signals",
+      "risk signals",
+      "compliance tool",
+      "gpt-4o tool"
+    ],
+    "summary": "A tool built with FastAPI, MongoDB and GPT-4o to identify and surface risk signals from business documents.",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "MongoDB",
+      "GPT-4o"
+    ],
+    "overview": "The Compliance Signals Intelligence tool identifies and surfaces risk signals from business documents. It was developed at JHS & Associates LLP using FastAPI, MongoDB and GPT-4o.",
+    "problem": "Business documents can contain indications of risk that are easy to miss in manual review. The tool's purpose is to help surface such signals for people to review.",
+    "approach": [
+      "Developed a tool to identify and surface risk signals from business documents.",
+      "Used FastAPI for the backend service, MongoDB for storage, and GPT-4o for language understanding."
+    ],
+    "architecture": [
+      {
+        "label": "Backend",
+        "detail": "FastAPI service.",
+        "status": "documented"
+      },
+      {
+        "label": "Database",
+        "detail": "MongoDB.",
+        "status": "documented"
+      },
+      {
+        "label": "LLM",
+        "detail": "GPT-4o is used to identify risk signals.",
+        "status": "documented"
+      },
+      {
+        "label": "Document ingestion, prompt design, signal taxonomy, data models and output format",
+        "detail": "Not specified in the source material.",
+        "status": "unspecified"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "Business documents are supplied to the tool.",
+        "status": "documented"
+      },
+      {
+        "step": "Risk signals are identified and surfaced. The detailed steps are not specified.",
+        "status": "unspecified"
+      }
+    ],
+    "contribution": {
+      "type": "Developed",
+      "items": [
+        "Developed the Compliance Signals Intelligence tool using FastAPI, MongoDB and GPT-4o."
+      ]
+    },
+    "limitations": [
+      "The tool surfaces signals; it is not a legal compliance certification and does not guarantee detection of every risk.",
+      "Architectural details beyond the documented stack are unspecified.",
+      "Company and document specifics are confidential and not published."
+    ],
+    "future_improvements": [
+      "Possible direction: a labelled evaluation set to measure precision and recall of surfaced signals."
+    ],
+    "related_skills": [
+      "GPT-4o",
+      "FastAPI",
+      "MongoDB",
+      "LLM-Based Validation",
+      "Prompt Engineering"
+    ],
+    "related_projects": [
+      "invoice-extraction"
+    ],
+    "links": []
+  },
+  {
+    "id": "cryptolab-forecasting",
+    "title": "CryptoLab: Bitcoin Price Forecasting",
+    "category": "Machine Learning Application",
+    "filters": [
+      "Applied AI",
+      "Backend Development",
+      "Data Processing"
+    ],
+    "featured": false,
+    "employer": null,
+    "confidential": false,
+    "aliases": [
+      "cryptolab",
+      "bitcoin",
+      "lstm",
+      "binance",
+      "forecasting",
+      "sentiment"
+    ],
+    "summary": "A personal project: a FastAPI backend and web frontend for Bitcoin price forecasting with an LSTM model and Binance market data.",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "TensorFlow",
+      "Pandas",
+      "NumPy",
+      "Binance API",
+      "JWT"
+    ],
+    "overview": "CryptoLab is a cryptocurrency price forecasting tool. The backend fetches data from the Binance API, forecasts Bitcoin prices with an LSTM model, reports market sentiment probabilities and handles contact-form queries by email.",
+    "problem": "Price history is noisy and hard to interpret by eye. This project fetches market data and applies a sequence model to produce forecasts.",
+    "approach": [
+      "Real-time and historical data are fetched with the Binance API.",
+      "An LSTM model forecasts Bitcoin prices from historical data.",
+      "Market sentiment probabilities (bullish, bearish, neutral) are provided.",
+      "JWT authentication protects the forecasting endpoints; contact queries are sent by SMTP email."
+    ],
+    "architecture": [
+      {
+        "label": "Backend",
+        "detail": "FastAPI on Python 3.11.",
+        "status": "documented"
+      },
+      {
+        "label": "Forecasting",
+        "detail": "TensorFlow LSTM model with Pandas and NumPy for data preparation.",
+        "status": "documented"
+      },
+      {
+        "label": "Data source",
+        "detail": "Binance API.",
+        "status": "documented"
+      },
+      {
+        "label": "Forecast accuracy",
+        "detail": "Not specified.",
+        "status": "unspecified"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "Market data is fetched from Binance.",
+        "status": "documented"
+      },
+      {
+        "step": "The LSTM model produces a price forecast.",
+        "status": "documented"
+      },
+      {
+        "step": "The frontend shows the forecast and sentiment to authenticated users.",
+        "status": "documented"
+      }
+    ],
+    "contribution": {
+      "type": "Built",
+      "items": [
+        "Built the backend and frontend of this personal project, per the public repositories."
+      ]
+    },
+    "limitations": [
+      "Details come from the project's public README on GitHub; no usage numbers, accuracy figures or deployment results are claimed.",
+      "The backend README states it was in development and not yet deployed as of 5 June 2025. Forecasts are not financial advice."
+    ],
+    "future_improvements": [],
+    "related_skills": [
+      "FastAPI",
+      "Python",
+      "REST APIs"
+    ],
+    "related_projects": [
+      "rag-chatbots"
+    ],
+    "links": [
+      {
+        "label": "Backend repository",
+        "url": "https://github.com/VasuGadde0203/CryptoLab_backend"
+      },
+      {
+        "label": "Frontend repository",
+        "url": "https://github.com/VasuGadde0203/CryptoLab_frontend"
+      }
+    ]
+  },
+  {
+    "id": "expense-sheet-extraction",
+    "title": "Expense Sheet Document Automation",
+    "category": "Document Intelligence & Automation",
+    "filters": [
+      "Document Intelligence",
+      "Automation",
+      "Applied AI"
+    ],
+    "featured": true,
+    "employer": "jhs-associates",
+    "confidential": true,
+    "aliases": [
+      "expense sheet",
+      "expense sheets",
+      "expenses",
+      "expense extraction"
+    ],
+    "summary": "A document automation workflow that extracts details from expense sheets using AI and OCR.",
+    "technologies": [
+      "OCR",
+      "AI-based extraction"
+    ],
+    "overview": "A document automation project at JHS & Associates LLP in which details are extracted from expense sheets using AI and OCR.",
+    "problem": "Expense sheets arrive as documents, and keying their details into a system by hand is slow and error-prone. OCR and AI-based extraction can read the sheets and pull out the details automatically.",
+    "approach": [
+      "Developed a document automation workflow that extracts details from expense sheets using AI and OCR."
+    ],
+    "architecture": [
+      {
+        "label": "OCR and AI extraction",
+        "detail": "OCR reads the expense sheets and AI is used to extract the details from them.",
+        "status": "documented"
+      },
+      {
+        "label": "Specific models, OCR engine, fields extracted, validation and output format",
+        "detail": "Not specified. Confidential employer information is not published.",
+        "status": "unspecified"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "Expense sheets are read with OCR.",
+        "status": "documented"
+      },
+      {
+        "step": "AI extracts the details from the sheets.",
+        "status": "documented"
+      }
+    ],
+    "contribution": {
+      "type": "Developed",
+      "items": [
+        "Developed the document automation workflow that extracts details from expense sheets using AI and OCR."
+      ]
+    },
+    "limitations": [
+      "The OCR engine, AI model, extracted fields, volumes and accuracy are not documented, so none are claimed.",
+      "Client and company-specific details are anonymised."
+    ],
+    "future_improvements": [
+      "Possible direction: a validation step that flags low-confidence extractions for human review."
+    ],
+    "related_skills": [
+      "OCR",
+      "Structured Data Extraction",
+      "Workflow Automation",
+      "Python"
+    ],
+    "related_projects": [
+      "invoice-extraction",
+      "financial-statement-extraction"
+    ],
+    "links": []
+  },
+  {
+    "id": "financial-statement-extraction",
+    "title": "Financial Statement Extraction",
+    "category": "Document Intelligence / Financial Data Processing",
+    "filters": [
+      "Document Intelligence",
+      "Data Processing"
+    ],
+    "featured": false,
+    "employer": "jhs-associates",
+    "confidential": true,
+    "aliases": [
+      "financial statement",
+      "financial statements",
+      "pdfplumber",
+      "balance sheet",
+      "pdf tables"
+    ],
+    "summary": "A pipeline using pdfplumber to support structured extraction from financial statement PDFs.",
+    "technologies": [
+      "pdfplumber"
+    ],
+    "overview": "A document-intelligence pipeline developed at JHS & Associates LLP that uses pdfplumber to support structured extraction from financial statement PDFs.",
+    "problem": "Financial statements are commonly distributed as PDFs, which are not directly usable as structured data. Extraction makes their contents available for downstream processing.",
+    "approach": [
+      "Developed a financial statement extraction pipeline using pdfplumber to support structured extraction from PDF documents."
+    ],
+    "architecture": [
+      {
+        "label": "PDF parsing",
+        "detail": "pdfplumber extracts content from PDF documents.",
+        "status": "documented"
+      },
+      {
+        "label": "Rest of the stack, extracted fields, output format and use of LLMs",
+        "detail": "Not specified in the source material.",
+        "status": "unspecified"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "A financial statement PDF is read with pdfplumber.",
+        "status": "documented"
+      },
+      {
+        "step": "Structured data is extracted. The exact fields are not specified.",
+        "status": "unspecified"
+      }
+    ],
+    "contribution": {
+      "type": "Developed",
+      "items": [
+        "Developed the financial statement extraction pipeline using pdfplumber."
+      ]
+    },
+    "limitations": [
+      "Only pdfplumber is documented. No additional stack or extraction capability is claimed.",
+      "No accuracy or volume figures are available."
+    ],
+    "future_improvements": [
+      "Possible direction: field-level evaluation against hand-labelled statements."
+    ],
+    "related_skills": [
+      "pdfplumber",
+      "PDF Extraction",
+      "Structured Data Extraction"
+    ],
+    "related_projects": [
+      "invoice-extraction",
+      "payroll-automation"
+    ],
+    "links": []
+  },
+  {
+    "id": "gita-chatbot",
+    "title": "GitaChatBot",
+    "category": "Generative AI / Retrieval-Augmented Generation",
+    "filters": [
+      "Generative AI and RAG",
+      "Applied AI"
+    ],
+    "featured": true,
+    "employer": null,
+    "confidential": false,
+    "aliases": [
+      "gita",
+      "bhagavad gita",
+      "faiss",
+      "gemini",
+      "s3",
+      "embeddings from pdf"
+    ],
+    "summary": "A personal project: a conversational chatbot that answers life questions with insights from the Bhagavad Gita, using embeddings in FAISS.",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "Gemini",
+      "FAISS",
+      "MongoDB",
+      "Amazon S3",
+      "HTML/CSS/JavaScript"
+    ],
+    "overview": "A chatbot built with FastAPI, a Gemini model and a vector index. Users register, log in and ask questions; responses use embeddings stored in FAISS and S3.",
+    "problem": "Answers about a long text are more useful when grounded in the text itself. This project indexes the source material so the model can respond from relevant passages.",
+    "approach": [
+      "A script (create_embeddings_from_pdf.py) builds embeddings from PDF source material.",
+      "FAISS provides vector indexing for faster retrieval; embeddings and indexes are stored on Amazon S3.",
+      "MongoDB stores user data and conversations; users can register, log in and log out.",
+      "The Gemini model generates the responses."
+    ],
+    "architecture": [
+      {
+        "label": "Frontend",
+        "detail": "HTML, CSS and JavaScript.",
+        "status": "documented"
+      },
+      {
+        "label": "Backend",
+        "detail": "Python FastAPI with the Gemini model.",
+        "status": "documented"
+      },
+      {
+        "label": "Vector search and storage",
+        "detail": "FAISS for indexing; Amazon S3 for embeddings and FAISS indexes; MongoDB for users and conversations.",
+        "status": "documented"
+      },
+      {
+        "label": "Chunking and ranking details",
+        "detail": "Not specified in the README.",
+        "status": "unspecified"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "Source PDFs are converted to embeddings and indexed in FAISS.",
+        "status": "documented"
+      },
+      {
+        "step": "A user asks a question in the web interface.",
+        "status": "documented"
+      },
+      {
+        "step": "Relevant content is retrieved and the Gemini model generates the response.",
+        "status": "documented"
+      }
+    ],
+    "contribution": {
+      "type": "Built",
+      "items": [
+        "Built this personal project, per the public repository."
+      ]
+    },
+    "limitations": [
+      "Details come from the project's public README on GitHub; no usage numbers, accuracy figures or deployment results are claimed.",
+      "The README lists voice interaction, more source books and cloud deployment as future enhancements, so they are not claimed."
+    ],
+    "future_improvements": [],
+    "related_skills": [
+      "Retrieval-Augmented Generation",
+      "Embeddings",
+      "FAISS",
+      "FastAPI",
+      "MongoDB"
+    ],
+    "related_projects": [
+      "rag-chatbots",
+      "class9-science-rag-chatbot"
+    ],
+    "links": [
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/VasuGadde0203/GitaChatBot"
+      }
+    ]
+  },
+  {
+    "id": "invoice-extraction",
+    "title": "AI Invoice & PDF Extraction",
+    "category": "Document Intelligence",
+    "filters": [
+      "Document Intelligence",
+      "Applied AI",
+      "Generative AI and RAG"
+    ],
+    "featured": true,
+    "employer": "jhs-associates",
+    "confidential": true,
+    "aliases": [
+      "invoice",
+      "invoices",
+      "invoice processing",
+      "invoice classification",
+      "pdf extraction",
+      "surya",
+      "hybrid ocr",
+      "ocr"
+    ],
+    "summary": "A hybrid OCR and LLM pipeline that extracts structured information from invoice PDFs, using Surya OCR with a local Qwen2.5 model and an OpenAI API fallback.",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "Surya OCR",
+      "Qwen2.5",
+      "OpenAI API"
+    ],
+    "overview": "A document-intelligence pipeline that turns unstructured invoice PDFs into structured data and classifies invoices. It combines Surya OCR for text recognition with a local Qwen2.5 model for language understanding, and falls back to the cloud-based OpenAI API when needed.",
+    "problem": "Invoices arrive as PDFs with varying layouts, so the information inside them is unstructured. Downstream finance workflows need that information as structured fields and a classification, which plain text extraction alone does not provide.",
+    "approach": [
+      "Built a hybrid OCR and LLM pipeline to extract structured information from invoice PDFs.",
+      "Integrated Surya OCR with a local Qwen2.5 model and a cloud-based OpenAI API fallback for document processing.",
+      "Implemented fallback logic between local and cloud LLMs to balance processing cost, latency, and extraction quality.",
+      "Designed the workflow to support structured data extraction and invoice classification from unstructured documents."
+    ],
+    "architecture": [
+      {
+        "label": "OCR layer",
+        "detail": "Surya OCR reads the invoice PDF.",
+        "status": "documented"
+      },
+      {
+        "label": "Local LLM",
+        "detail": "Qwen2.5 runs locally for extraction and classification.",
+        "status": "documented"
+      },
+      {
+        "label": "Cloud fallback",
+        "detail": "OpenAI API is used as a fallback to local processing.",
+        "status": "documented"
+      },
+      {
+        "label": "Fallback policy",
+        "detail": "Fallback logic balances cost, latency and extraction quality. The exact trigger conditions are not specified in the source material.",
+        "status": "unspecified"
+      },
+      {
+        "label": "Why hybrid",
+        "detail": "In general, a local model keeps routine work cheap and data on-premises, while a cloud model can serve as a higher-capability safety net. This is general architectural reasoning, not a verified account of the reasons for this system.",
+        "status": "general"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "An invoice PDF enters the pipeline.",
+        "status": "documented"
+      },
+      {
+        "step": "Surya OCR recognises the text.",
+        "status": "documented"
+      },
+      {
+        "step": "The local Qwen2.5 model extracts structured fields and classifies the invoice.",
+        "status": "documented"
+      },
+      {
+        "step": "If local processing is not sufficient, the OpenAI API fallback is used.",
+        "status": "documented"
+      },
+      {
+        "step": "Structured output is produced for downstream use. Output schema and validation rules are not specified.",
+        "status": "unspecified"
+      }
+    ],
+    "contribution": {
+      "type": "Developed and built",
+      "items": [
+        "Developed the hybrid OCR and LLM-based invoice classification pipeline.",
+        "Integrated Surya OCR with local Qwen2.5 and the OpenAI API fallback.",
+        "Implemented the local/cloud fallback logic.",
+        "Resolved production dependency conflicts within the document processing pipeline to stabilize system behavior."
+      ]
+    },
+    "limitations": [
+      "No verified accuracy, throughput, document-volume or cost-saving figures are available, so none are claimed.",
+      "The exact fallback trigger conditions and output schema are not specified in the source material.",
+      "Details are anonymised; client and document specifics are confidential."
+    ],
+    "future_improvements": [
+      "Possible direction: a labelled evaluation set to measure extraction accuracy per field.",
+      "Possible direction: logging of fallback rates to tune the cost/latency/quality balance."
+    ],
+    "related_skills": [
+      "OCR",
+      "Surya OCR",
+      "Qwen2.5",
+      "OpenAI API",
+      "Invoice Classification",
+      "Structured Data Extraction",
+      "FastAPI"
+    ],
+    "related_projects": [
+      "financial-statement-extraction",
+      "rag-chatbots"
+    ],
+    "links": []
+  },
+  {
+    "id": "payroll-automation",
+    "title": "Payroll Review and Reconciliation",
+    "category": "Workflow Automation / Data Processing",
+    "filters": [
+      "Automation",
+      "Data Processing"
+    ],
+    "featured": false,
+    "employer": "jhs-associates",
+    "confidential": true,
+    "aliases": [
+      "payroll",
+      "reconciliation",
+      "ope",
+      "ope approval",
+      "spreadsheet",
+      "pandas"
+    ],
+    "summary": "Automated payroll review and spreadsheet reconciliation workflows with Python and Pandas, plus an OPE approval PDF export system.",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Spreadsheets",
+      "PDF export"
+    ],
+    "overview": "A workflow-automation project at JHS & Associates LLP covering payroll review, spreadsheet reconciliation and an OPE approval PDF export system.",
+    "problem": "Payroll review and reconciling spreadsheets are repetitive, detail-heavy tasks. Automating them reduces manual handling.",
+    "approach": [
+      "Automated payroll review and spreadsheet reconciliation workflows using Python and Pandas.",
+      "Built an OPE approval PDF export system as part of the workflow."
+    ],
+    "architecture": [
+      {
+        "label": "Data processing",
+        "detail": "Python and Pandas process spreadsheet data.",
+        "status": "documented"
+      },
+      {
+        "label": "Approval output",
+        "detail": "An OPE approval PDF export system produces approval documents.",
+        "status": "documented"
+      },
+      {
+        "label": "Rules, input formats, validation checks and what OPE stands for",
+        "detail": "Not specified in the source material.",
+        "status": "unspecified"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "Payroll spreadsheets are read and reviewed with Python and Pandas.",
+        "status": "documented"
+      },
+      {
+        "step": "Spreadsheet data is reconciled.",
+        "status": "documented"
+      },
+      {
+        "step": "An OPE approval PDF is exported.",
+        "status": "documented"
+      }
+    ],
+    "contribution": {
+      "type": "Automated",
+      "items": [
+        "Automated payroll review and spreadsheet reconciliation workflows and the OPE approval PDF export system."
+      ]
+    },
+    "limitations": [
+      "No employee payroll data is published. Only the documented workflow is described.",
+      "No time-saving, volume or accuracy figures are claimed.",
+      "Reconciliation rules are not specified."
+    ],
+    "future_improvements": [
+      "Possible direction: automated reconciliation tests on synthetic data."
+    ],
+    "related_skills": [
+      "Python",
+      "Pandas",
+      "Workflow Automation"
+    ],
+    "related_projects": [
+      "financial-statement-extraction",
+      "expense-sheet-extraction"
+    ],
+    "links": []
+  },
+  {
+    "id": "personal-research-assistant",
+    "title": "Personal Research Assistant",
+    "category": "Generative AI Application",
+    "filters": [
+      "Applied AI",
+      "Backend Development"
+    ],
+    "featured": true,
+    "employer": null,
+    "confidential": false,
+    "aliases": [
+      "research assistant",
+      "serpapi",
+      "jwt",
+      "citations",
+      "web search"
+    ],
+    "summary": "A personal project: a web app that answers research queries with AI, stores conversations and links the sources it used.",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "MongoDB",
+      "Azure OpenAI",
+      "SerpAPI",
+      "JWT",
+      "HTML/CSS/JavaScript"
+    ],
+    "overview": "A web-based research assistant. The frontend uses HTML, CSS and JavaScript; the backend is FastAPI with MongoDB for data persistence. Research responses include linked sources.",
+    "problem": "Researching a topic means searching, reading and keeping track of sources. This project wraps AI-powered answers, source links and saved conversation history in one app.",
+    "approach": [
+      "A /research endpoint returns AI-powered responses to research queries.",
+      "A /store_conversations endpoint saves and manages chat sessions in MongoDB.",
+      "JWT-based authentication protects access.",
+      "Research responses include clickable citations that link to sources."
+    ],
+    "architecture": [
+      {
+        "label": "Frontend",
+        "detail": "HTML, CSS and JavaScript, responsive for desktop and mobile.",
+        "status": "documented"
+      },
+      {
+        "label": "Backend",
+        "detail": "FastAPI with MongoDB for conversation storage and JWT authentication.",
+        "status": "documented"
+      },
+      {
+        "label": "AI and search services",
+        "detail": "The README lists Azure OpenAI and SerpAPI configuration. Exactly how search results feed the model is not described.",
+        "status": "documented"
+      },
+      {
+        "label": "Retrieval method",
+        "detail": "Not specified; this page does not claim a RAG pipeline.",
+        "status": "unspecified"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "A signed-in user submits a research query.",
+        "status": "documented"
+      },
+      {
+        "step": "The /research endpoint returns an AI-generated answer with linked sources.",
+        "status": "documented"
+      },
+      {
+        "step": "Conversations can be stored through /store_conversations.",
+        "status": "documented"
+      }
+    ],
+    "contribution": {
+      "type": "Built",
+      "items": [
+        "Built this personal project end to end (frontend, FastAPI backend and MongoDB storage), per the public repository."
+      ]
+    },
+    "limitations": [
+      "Details come from the project's public README on GitHub; no usage numbers, accuracy figures or deployment results are claimed.",
+      "Personal project, not production client work."
+    ],
+    "future_improvements": [],
+    "related_skills": [
+      "FastAPI",
+      "MongoDB",
+      "OpenAI API",
+      "REST APIs",
+      "Prompt Engineering"
+    ],
+    "related_projects": [
+      "rag-chatbots",
+      "gita-chatbot"
+    ],
+    "links": [
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/VasuGadde0203/Personal-Research-Assistant"
+      }
+    ]
+  },
+  {
+    "id": "rag-chatbots",
+    "title": "RAG-Based Chatbot Systems",
+    "category": "Generative AI / Retrieval-Augmented Generation",
+    "filters": [
+      "Generative AI and RAG",
+      "Applied AI"
+    ],
+    "featured": true,
+    "employer": null,
+    "confidential": false,
+    "aliases": [
+      "rag",
+      "retrieval augmented generation",
+      "chatbot",
+      "chatbots",
+      "faiss",
+      "pinecone",
+      "crypto research agent",
+      "lstm",
+      "query routing",
+      "conversational agent",
+      "embeddings",
+      "vector search"
+    ],
+    "summary": "Retrieval-Augmented Generation chatbots built on document ingestion, chunking, embeddings and vector search, plus a crypto research agent and a query-routing conversational agent.",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "OpenAI API",
+      "FAISS",
+      "Pinecone",
+      "MongoDB"
+    ],
+    "overview": "A body of work on RAG chatbots: ingesting documents, splitting them into chunks, embedding them, searching them by vector similarity and passing the retrieved content to an LLM so responses are grounded in relevant knowledge-base content. It also includes a crypto research agent that combines RAG with LSTM-based forecasting, and a conversational agent with query routing.",
+    "problem": "A language model on its own does not know an organisation's documents and can produce unsupported answers. Retrieval gives the model relevant source material at question time so that responses can be grounded in it.",
+    "approach": [
+      "Developed Retrieval-Augmented Generation chatbots using document ingestion, text chunking, embeddings, and vector search.",
+      "Integrated retrieval pipelines with LLMs to generate responses grounded in relevant document or knowledge-base content.",
+      "Worked on a crypto research agent combining RAG with LSTM-based forecasting.",
+      "Developed a conversational agent with query-routing capabilities to support different types of user requests."
+    ],
+    "architecture": [
+      {
+        "label": "Ingestion and chunking",
+        "detail": "Documents are ingested and split into text chunks.",
+        "status": "documented"
+      },
+      {
+        "label": "Embeddings and vector search",
+        "detail": "Chunks are embedded and searched by vector similarity.",
+        "status": "documented"
+      },
+      {
+        "label": "LLM generation",
+        "detail": "Retrieved content is supplied to an LLM to generate responses grounded in it.",
+        "status": "documented"
+      },
+      {
+        "label": "Technologies",
+        "detail": "The project lists Python, FastAPI, OpenAI API, FAISS, Pinecone and MongoDB. These were not necessarily all used together in a single application.",
+        "status": "documented"
+      },
+      {
+        "label": "Retrieval vs generation vs context",
+        "detail": "In general: retrieval finds relevant source passages; generation writes the answer from them; conversational context carries earlier turns so follow-up questions can be interpreted. This is a general explanation, not a description of each system's internals.",
+        "status": "general"
+      },
+      {
+        "label": "Query routing",
+        "detail": "A conversational agent routed different types of user requests. The routing mechanism is not specified.",
+        "status": "unspecified"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "Ingest documents and split them into chunks.",
+        "status": "documented"
+      },
+      {
+        "step": "Generate embeddings for chunks and store them for vector search.",
+        "status": "documented"
+      },
+      {
+        "step": "At question time, retrieve the most relevant chunks by vector search.",
+        "status": "documented"
+      },
+      {
+        "step": "Pass the retrieved content to an LLM to generate a grounded response.",
+        "status": "documented"
+      },
+      {
+        "step": "For the conversational agent, route the request according to its type.",
+        "status": "documented"
+      }
+    ],
+    "contribution": {
+      "type": "Developed and worked on",
+      "items": [
+        "Developed RAG chatbots with document ingestion, text chunking, embeddings and vector search.",
+        "Integrated retrieval pipelines with LLMs for grounded responses.",
+        "Worked on a crypto research agent combining RAG with LSTM-based forecasting.",
+        "Developed a conversational agent with query routing."
+      ]
+    },
+    "limitations": [
+      "No verified counts of chatbots built, user numbers, accuracy metrics or deployment results are available, so none are claimed.",
+      "The resume does not attribute this project to a specific employer.",
+      "The crypto research agent is described only as work 'worked on'; its forecasting results are not documented.",
+      "This page describes past project experience, not the Ask Vasu AI assistant on this website, which is a separate new build."
+    ],
+    "future_improvements": [
+      "Possible direction: a systematic retrieval and answer-grounding evaluation set.",
+      "Possible direction: hybrid retrieval (semantic plus keyword) and reranking."
+    ],
+    "related_skills": [
+      "Retrieval-Augmented Generation",
+      "Embeddings",
+      "Vector Search",
+      "FAISS",
+      "Pinecone",
+      "Document Chunking",
+      "OpenAI API",
+      "Conversational AI"
+    ],
+    "related_projects": [
+      "recruitment-automation",
+      "invoice-extraction"
+    ],
+    "links": []
+  },
+  {
+    "id": "recruitment-automation",
+    "title": "AI-Powered Recruitment Automation Platform",
+    "category": "Applied AI / Recruitment Automation",
+    "filters": [
+      "Applied AI",
+      "Generative AI and RAG",
+      "Backend Development"
+    ],
+    "featured": true,
+    "employer": null,
+    "confidential": false,
+    "aliases": [
+      "recruitment",
+      "recruiting",
+      "resume parsing",
+      "candidate",
+      "candidate matching",
+      "job matching",
+      "hr",
+      "hiring platform"
+    ],
+    "summary": "A Generative AI-based recruitment solution for resume parsing, structured candidate profile extraction, and semantic candidate-job matching.",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "OpenAI API",
+      "Pinecone",
+      "MongoDB"
+    ],
+    "overview": "A recruitment automation platform that parses resumes into structured candidate profiles, matches candidates to job requirements semantically, and exposes backend APIs for resume storage, retrieval and candidate suitability analysis.",
+    "problem": "Recruiters review many resumes in free-form layouts. Turning them into structured profiles and judging relevance to a job requires more than keyword matching.",
+    "approach": [
+      "Built a Generative AI-based recruitment solution for resume parsing and structured candidate profile extraction.",
+      "Implemented semantic candidate-job matching to evaluate the relevance of candidate profiles against job requirements.",
+      "Designed backend APIs for resume storage, retrieval, and candidate suitability analysis.",
+      "Used vector search and LLM-based processing to support candidate discovery and recruitment workflow automation."
+    ],
+    "architecture": [
+      {
+        "label": "Resume parsing",
+        "detail": "Generative AI extracts a structured candidate profile from a resume.",
+        "status": "documented"
+      },
+      {
+        "label": "Semantic matching",
+        "detail": "Candidate profiles are compared with job requirements by semantic relevance.",
+        "status": "documented"
+      },
+      {
+        "label": "Vector search",
+        "detail": "Vector search supports candidate discovery.",
+        "status": "documented"
+      },
+      {
+        "label": "Backend APIs",
+        "detail": "APIs handle resume storage, retrieval and candidate suitability analysis.",
+        "status": "documented"
+      },
+      {
+        "label": "Technologies",
+        "detail": "Python, FastAPI, OpenAI API, Pinecone and MongoDB are listed. Which component used which technology is not specified.",
+        "status": "unspecified"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "A resume is ingested and parsed by an LLM-based process.",
+        "status": "documented"
+      },
+      {
+        "step": "A structured candidate profile is extracted and the resume is stored.",
+        "status": "documented"
+      },
+      {
+        "step": "Candidate profiles are matched semantically against job requirements.",
+        "status": "documented"
+      },
+      {
+        "step": "Vector search and LLM-based processing support candidate discovery and suitability analysis.",
+        "status": "documented"
+      }
+    ],
+    "contribution": {
+      "type": "Built, implemented and designed",
+      "items": [
+        "Built the resume parsing and structured candidate profile extraction.",
+        "Implemented semantic candidate-job matching.",
+        "Designed backend APIs for resume storage, retrieval and candidate suitability analysis.",
+        "Used vector search and LLM-based processing for candidate discovery and workflow automation."
+      ]
+    },
+    "limitations": [
+      "No accuracy scores, hiring outcomes or candidate volumes are available, so none are claimed.",
+      "The platform supports analysis and discovery. It is not documented as making autonomous final hiring decisions.",
+      "The resume does not attribute this project to a specific employer."
+    ],
+    "future_improvements": [
+      "Possible direction: bias and fairness review of matching outputs.",
+      "Possible direction: a labelled evaluation set to measure matching relevance."
+    ],
+    "related_skills": [
+      "Embeddings",
+      "Vector Search",
+      "Semantic Search",
+      "Pinecone",
+      "OpenAI API",
+      "FastAPI",
+      "MongoDB",
+      "Structured Data Extraction"
+    ],
+    "related_projects": [
+      "rag-chatbots",
+      "invoice-extraction"
+    ],
+    "links": []
+  },
+  {
+    "id": "vendor-payment-management",
+    "title": "Vendor Payment Management System",
+    "category": "Backend Architecture / Documentation",
+    "filters": [
+      "Backend Development"
+    ],
+    "featured": false,
+    "employer": "jhs-associates",
+    "confidential": true,
+    "aliases": [
+      "vendor payment",
+      "vendor payments",
+      "build documentation",
+      "technical documentation",
+      "14 mongodb schemas",
+      "9 modules"
+    ],
+    "summary": "Technical build documentation for a Vendor Payment Management System covering 9 modules and 14 MongoDB schemas.",
+    "technologies": [
+      "MongoDB"
+    ],
+    "overview": "At JHS & Associates LLP I authored the technical build documentation for a Vendor Payment Management System. The documentation covers 9 modules and 14 MongoDB schemas.",
+    "problem": "A multi-module backend needs clear build documentation so that its modules and data models can be understood and implemented consistently.",
+    "approach": [
+      "Authored technical build documentation covering 9 modules and 14 MongoDB schemas."
+    ],
+    "architecture": [
+      {
+        "label": "Scope of documentation",
+        "detail": "9 modules and 14 MongoDB schemas.",
+        "status": "documented"
+      },
+      {
+        "label": "Module names, schema contents, API design and implementation",
+        "detail": "Not specified in the source material.",
+        "status": "unspecified"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "Authored the technical build documentation for the system.",
+        "status": "documented"
+      }
+    ],
+    "contribution": {
+      "type": "Authored (documentation)",
+      "items": [
+        "Authored the technical build documentation. The documented contribution is documentation, not independent implementation of every module."
+      ]
+    },
+    "limitations": [
+      "The documented contribution is technical build documentation. Implementation of the modules is not claimed.",
+      "No details of the modules or schemas are published."
+    ],
+    "future_improvements": [
+      "Not applicable to published information; no further plans are documented."
+    ],
+    "related_skills": [
+      "MongoDB",
+      "Technical Documentation",
+      "Backend Architecture"
+    ],
+    "related_projects": [
+      "compliance-signals"
+    ],
+    "links": []
+  },
+  {
+    "id": "voicebot-ai",
+    "title": "VoiceBot AI",
+    "category": "Conversational AI",
+    "filters": [
+      "Applied AI",
+      "Backend Development"
+    ],
+    "featured": false,
+    "employer": null,
+    "confidential": false,
+    "aliases": [
+      "voice bot",
+      "voicebot",
+      "speech to text",
+      "text to speech",
+      "assemblyai",
+      "resume persona"
+    ],
+    "summary": "A personal project: a voice assistant that transcribes speech, answers from a resume-based persona and replies in text and audio.",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "Azure OpenAI",
+      "AssemblyAI",
+      "Google Speech Recognition",
+      "gTTS"
+    ],
+    "overview": "An interactive voice-based assistant. Users speak or pick predefined questions; the app transcribes the audio, generates an answer and returns it as text and playable audio.",
+    "problem": "Conversations are more natural by voice. This project connects speech-to-text, a language model and text-to-speech in one web interface.",
+    "approach": [
+      "AssemblyAI provides speech-to-text, with a fallback to Google Speech Recognition.",
+      "Azure OpenAI generates answers; responses are based on a provided resume text.",
+      "Responses are converted to audio and played back in the browser.",
+      "A responsive web interface shows the conversation in real time."
+    ],
+    "architecture": [
+      {
+        "label": "Backend",
+        "detail": "FastAPI application with a Dockerfile.",
+        "status": "documented"
+      },
+      {
+        "label": "Speech services",
+        "detail": "AssemblyAI for transcription (Google Speech Recognition fallback) and text-to-speech for audio replies.",
+        "status": "documented"
+      },
+      {
+        "label": "Language model",
+        "detail": "Azure OpenAI, answering from a resume-based persona.",
+        "status": "documented"
+      },
+      {
+        "label": "Latency and accuracy",
+        "detail": "Not specified.",
+        "status": "unspecified"
+      }
+    ],
+    "workflow": [
+      {
+        "step": "The user records audio or selects a predefined question.",
+        "status": "documented"
+      },
+      {
+        "step": "Speech is transcribed to text.",
+        "status": "documented"
+      },
+      {
+        "step": "The model answers from the resume text and the reply is returned as text and audio.",
+        "status": "documented"
+      }
+    ],
+    "contribution": {
+      "type": "Built",
+      "items": [
+        "Built this personal project, per the public repository."
+      ]
+    },
+    "limitations": [
+      "Details come from the project's public README on GitHub; no usage numbers, accuracy figures or deployment results are claimed."
+    ],
+    "future_improvements": [],
+    "related_skills": [
+      "FastAPI",
+      "OpenAI API",
+      "Conversational AI",
+      "Prompt Engineering"
+    ],
+    "related_projects": [
+      "gita-chatbot",
+      "personal-research-assistant"
+    ],
+    "links": [
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/VasuGadde0203/My-Voicebot-AI"
+      }
+    ]
+  }
+]

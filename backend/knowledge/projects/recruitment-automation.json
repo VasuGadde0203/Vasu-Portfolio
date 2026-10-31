@@ -1,0 +1,54 @@
+{
+  "id": "recruitment-automation",
+  "title": "AI-Powered Recruitment Automation Platform",
+  "category": "Applied AI / Recruitment Automation",
+  "filters": ["Applied AI", "Generative AI and RAG", "Backend Development"],
+  "featured": true,
+  "employer": null,
+  "confidential": false,
+  "aliases": ["recruitment", "recruiting", "resume parsing", "candidate", "candidate matching", "job matching", "hr", "hiring platform"],
+  "summary": "A Generative AI-based recruitment solution for resume parsing, structured candidate profile extraction, and semantic candidate-job matching.",
+  "technologies": ["Python", "FastAPI", "OpenAI API", "Pinecone", "MongoDB"],
+  "overview": "A recruitment automation platform that parses resumes into structured candidate profiles, matches candidates to job requirements semantically, and exposes backend APIs for resume storage, retrieval and candidate suitability analysis.",
+  "problem": "Recruiters review many resumes in free-form layouts. Turning them into structured profiles and judging relevance to a job requires more than keyword matching.",
+  "approach": [
+    "Built a Generative AI-based recruitment solution for resume parsing and structured candidate profile extraction.",
+    "Implemented semantic candidate-job matching to evaluate the relevance of candidate profiles against job requirements.",
+    "Designed backend APIs for resume storage, retrieval, and candidate suitability analysis.",
+    "Used vector search and LLM-based processing to support candidate discovery and recruitment workflow automation."
+  ],
+  "architecture": [
+    {"label": "Resume parsing", "detail": "Generative AI extracts a structured candidate profile from a resume.", "status": "documented"},
+    {"label": "Semantic matching", "detail": "Candidate profiles are compared with job requirements by semantic relevance.", "status": "documented"},
+    {"label": "Vector search", "detail": "Vector search supports candidate discovery.", "status": "documented"},
+    {"label": "Backend APIs", "detail": "APIs handle resume storage, retrieval and candidate suitability analysis.", "status": "documented"},
+    {"label": "Technologies", "detail": "Python, FastAPI, OpenAI API, Pinecone and MongoDB are listed. Which component used which technology is not specified.", "status": "unspecified"}
+  ],
+  "workflow": [
+    {"step": "A resume is ingested and parsed by an LLM-based process.", "status": "documented"},
+    {"step": "A structured candidate profile is extracted and the resume is stored.", "status": "documented"},
+    {"step": "Candidate profiles are matched semantically against job requirements.", "status": "documented"},
+    {"step": "Vector search and LLM-based processing support candidate discovery and suitability analysis.", "status": "documented"}
+  ],
+  "contribution": {
+    "type": "Built, implemented and designed",
+    "items": [
+      "Built the resume parsing and structured candidate profile extraction.",
+      "Implemented semantic candidate-job matching.",
+      "Designed backend APIs for resume storage, retrieval and candidate suitability analysis.",
+      "Used vector search and LLM-based processing for candidate discovery and workflow automation."
+    ]
+  },
+  "limitations": [
+    "No accuracy scores, hiring outcomes or candidate volumes are available, so none are claimed.",
+    "The platform supports analysis and discovery. It is not documented as making autonomous final hiring decisions.",
+    "The resume does not attribute this project to a specific employer."
+  ],
+  "future_improvements": [
+    "Possible direction: bias and fairness review of matching outputs.",
+    "Possible direction: a labelled evaluation set to measure matching relevance."
+  ],
+  "related_skills": ["Embeddings", "Vector Search", "Semantic Search", "Pinecone", "OpenAI API", "FastAPI", "MongoDB", "Structured Data Extraction"],
+  "related_projects": ["rag-chatbots", "invoice-extraction"],
+  "links": []
+}

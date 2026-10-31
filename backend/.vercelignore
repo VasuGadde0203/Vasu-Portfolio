@@ -1,0 +1,17 @@
+.venv
+.env
+.env.*
+!.env.example
+tests
+scripts
+alembic
+alembic.ini
+Dockerfile
+.dockerignore
+.mypy_cache
+.pytest_cache
+.ruff_cache
+__pycache__
+*.pyc
+requirements-dev.txt
+pytest.ini

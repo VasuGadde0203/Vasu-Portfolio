@@ -1,0 +1,101 @@
+{
+  "featured": false,
+  "employer": null,
+  "confidential": false,
+  "links": [
+    {
+      "label": "GitHub repository",
+      "url": "https://github.com/VasuGadde0203/LLM-Powered-Knowledge-agent-class-9-"
+    }
+  ],
+  "future_improvements": [],
+  "aliases": [
+    "class 9",
+    "ncert",
+    "chromadb",
+    "streamlit",
+    "science chatbot",
+    "education"
+  ],
+  "id": "class9-science-rag-chatbot",
+  "title": "Class 9 Science RAG Chatbot",
+  "category": "Generative AI / Retrieval-Augmented Generation",
+  "filters": [
+    "Generative AI and RAG",
+    "Applied AI"
+  ],
+  "summary": "A personal project: a RAG chatbot that helps Class 9 students with Science questions from NCERT textbook content, adapting answers to proficiency.",
+  "technologies": [
+    "Python",
+    "Azure OpenAI",
+    "ChromaDB",
+    "MongoDB",
+    "Streamlit"
+  ],
+  "overview": "A Retrieval-Augmented Generation chatbot over NCERT Science PDFs. It retrieves relevant chunks from ChromaDB, generates answers with Azure OpenAI GPT-3.5, logs conversations in MongoDB and presents a Streamlit chat interface.",
+  "problem": "Students need answers tied to their textbook and pitched at their level. Retrieval over the textbook content grounds the answers, and proficiency-aware prompts adjust the depth.",
+  "approach": [
+    "Pre-processed PDFs are chunked and stored as embeddings in ChromaDB.",
+    "Semantic search retrieves relevant text chunks for each question.",
+    "Answers adapt to a student's proficiency level (Weak, Neutral, Strong).",
+    "The last 10 conversations from MongoDB are used for context-aware replies.",
+    "The Streamlit UI offers quick prompts, history and expandable retrieved content."
+  ],
+  "architecture": [
+    {
+      "label": "Retrieval",
+      "detail": "ChromaDB vector search with Azure OpenAI embeddings over NCERT Science PDFs.",
+      "status": "documented"
+    },
+    {
+      "label": "Generation",
+      "detail": "Azure OpenAI GPT-3.5 produces proficiency-adapted answers.",
+      "status": "documented"
+    },
+    {
+      "label": "Conversation memory",
+      "detail": "MongoDB logs conversations; recent ones are added to the prompt.",
+      "status": "documented"
+    },
+    {
+      "label": "Interface",
+      "detail": "Streamlit chat UI.",
+      "status": "documented"
+    }
+  ],
+  "workflow": [
+    {
+      "step": "Textbook PDFs are chunked and embedded into ChromaDB.",
+      "status": "documented"
+    },
+    {
+      "step": "A question retrieves the most relevant chunks.",
+      "status": "documented"
+    },
+    {
+      "step": "GPT-3.5 answers at the chosen proficiency level using the retrieved text and recent conversations.",
+      "status": "documented"
+    }
+  ],
+  "contribution": {
+    "type": "Built",
+    "items": [
+      "Built this personal project, per the public repository."
+    ]
+  },
+  "limitations": [
+    "Details come from the project's public README on GitHub; no usage numbers, accuracy figures or deployment results are claimed.",
+    "Answer quality has not been formally evaluated."
+  ],
+  "related_skills": [
+    "Retrieval-Augmented Generation",
+    "Embeddings",
+    "Vector Search",
+    "Prompt Engineering",
+    "MongoDB"
+  ],
+  "related_projects": [
+    "rag-chatbots",
+    "gita-chatbot"
+  ]
+}

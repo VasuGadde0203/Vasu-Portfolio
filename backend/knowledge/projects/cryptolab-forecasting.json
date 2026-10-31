@@ -1,0 +1,104 @@
+{
+  "featured": false,
+  "employer": null,
+  "confidential": false,
+  "links": [
+    {
+      "label": "Backend repository",
+      "url": "https://github.com/VasuGadde0203/CryptoLab_backend"
+    },
+    {
+      "label": "Frontend repository",
+      "url": "https://github.com/VasuGadde0203/CryptoLab_frontend"
+    }
+  ],
+  "future_improvements": [],
+  "aliases": [
+    "cryptolab",
+    "bitcoin",
+    "lstm",
+    "binance",
+    "forecasting",
+    "sentiment"
+  ],
+  "id": "cryptolab-forecasting",
+  "title": "CryptoLab: Bitcoin Price Forecasting",
+  "category": "Machine Learning Application",
+  "filters": [
+    "Applied AI",
+    "Backend Development",
+    "Data Processing"
+  ],
+  "summary": "A personal project: a FastAPI backend and web frontend for Bitcoin price forecasting with an LSTM model and Binance market data.",
+  "technologies": [
+    "Python",
+    "FastAPI",
+    "TensorFlow",
+    "Pandas",
+    "NumPy",
+    "Binance API",
+    "JWT"
+  ],
+  "overview": "CryptoLab is a cryptocurrency price forecasting tool. The backend fetches data from the Binance API, forecasts Bitcoin prices with an LSTM model, reports market sentiment probabilities and handles contact-form queries by email.",
+  "problem": "Price history is noisy and hard to interpret by eye. This project fetches market data and applies a sequence model to produce forecasts.",
+  "approach": [
+    "Real-time and historical data are fetched with the Binance API.",
+    "An LSTM model forecasts Bitcoin prices from historical data.",
+    "Market sentiment probabilities (bullish, bearish, neutral) are provided.",
+    "JWT authentication protects the forecasting endpoints; contact queries are sent by SMTP email."
+  ],
+  "architecture": [
+    {
+      "label": "Backend",
+      "detail": "FastAPI on Python 3.11.",
+      "status": "documented"
+    },
+    {
+      "label": "Forecasting",
+      "detail": "TensorFlow LSTM model with Pandas and NumPy for data preparation.",
+      "status": "documented"
+    },
+    {
+      "label": "Data source",
+      "detail": "Binance API.",
+      "status": "documented"
+    },
+    {
+      "label": "Forecast accuracy",
+      "detail": "Not specified.",
+      "status": "unspecified"
+    }
+  ],
+  "workflow": [
+    {
+      "step": "Market data is fetched from Binance.",
+      "status": "documented"
+    },
+    {
+      "step": "The LSTM model produces a price forecast.",
+      "status": "documented"
+    },
+    {
+      "step": "The frontend shows the forecast and sentiment to authenticated users.",
+      "status": "documented"
+    }
+  ],
+  "contribution": {
+    "type": "Built",
+    "items": [
+      "Built the backend and frontend of this personal project, per the public repositories."
+    ]
+  },
+  "limitations": [
+    "Details come from the project's public README on GitHub; no usage numbers, accuracy figures or deployment results are claimed.",
+    "The backend README states it was in development and not yet deployed as of 5 June 2025. Forecasts are not financial advice."
+  ],
+  "related_skills": [
+    "FastAPI",
+    "Python",
+    "REST APIs"
+  ],
+  "related_projects": [
+    "rag-chatbots"
+  ]
+}

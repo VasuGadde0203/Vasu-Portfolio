@@ -1,0 +1,55 @@
+{
+  "id": "invoice-extraction",
+  "title": "AI Invoice & PDF Extraction",
+  "category": "Document Intelligence",
+  "filters": ["Document Intelligence", "Applied AI", "Generative AI and RAG"],
+  "featured": true,
+  "employer": "jhs-associates",
+  "confidential": true,
+  "aliases": ["invoice", "invoices", "invoice processing", "invoice classification", "pdf extraction", "surya", "hybrid ocr", "ocr"],
+  "summary": "A hybrid OCR and LLM pipeline that extracts structured information from invoice PDFs, using Surya OCR with a local Qwen2.5 model and an OpenAI API fallback.",
+  "technologies": ["Python", "FastAPI", "Surya OCR", "Qwen2.5", "OpenAI API"],
+  "overview": "A document-intelligence pipeline that turns unstructured invoice PDFs into structured data and classifies invoices. It combines Surya OCR for text recognition with a local Qwen2.5 model for language understanding, and falls back to the cloud-based OpenAI API when needed.",
+  "problem": "Invoices arrive as PDFs with varying layouts, so the information inside them is unstructured. Downstream finance workflows need that information as structured fields and a classification, which plain text extraction alone does not provide.",
+  "approach": [
+    "Built a hybrid OCR and LLM pipeline to extract structured information from invoice PDFs.",
+    "Integrated Surya OCR with a local Qwen2.5 model and a cloud-based OpenAI API fallback for document processing.",
+    "Implemented fallback logic between local and cloud LLMs to balance processing cost, latency, and extraction quality.",
+    "Designed the workflow to support structured data extraction and invoice classification from unstructured documents."
+  ],
+  "architecture": [
+    {"label": "OCR layer", "detail": "Surya OCR reads the invoice PDF.", "status": "documented"},
+    {"label": "Local LLM", "detail": "Qwen2.5 runs locally for extraction and classification.", "status": "documented"},
+    {"label": "Cloud fallback", "detail": "OpenAI API is used as a fallback to local processing.", "status": "documented"},
+    {"label": "Fallback policy", "detail": "Fallback logic balances cost, latency and extraction quality. The exact trigger conditions are not specified in the source material.", "status": "unspecified"},
+    {"label": "Why hybrid", "detail": "In general, a local model keeps routine work cheap and data on-premises, while a cloud model can serve as a higher-capability safety net. This is general architectural reasoning, not a verified account of the reasons for this system.", "status": "general"}
+  ],
+  "workflow": [
+    {"step": "An invoice PDF enters the pipeline.", "status": "documented"},
+    {"step": "Surya OCR recognises the text.", "status": "documented"},
+    {"step": "The local Qwen2.5 model extracts structured fields and classifies the invoice.", "status": "documented"},
+    {"step": "If local processing is not sufficient, the OpenAI API fallback is used.", "status": "documented"},
+    {"step": "Structured output is produced for downstream use. Output schema and validation rules are not specified.", "status": "unspecified"}
+  ],
+  "contribution": {
+    "type": "Developed and built",
+    "items": [
+      "Developed the hybrid OCR and LLM-based invoice classification pipeline.",
+      "Integrated Surya OCR with local Qwen2.5 and the OpenAI API fallback.",
+      "Implemented the local/cloud fallback logic.",
+      "Resolved production dependency conflicts within the document processing pipeline to stabilize system behavior."
+    ]
+  },
+  "limitations": [
+    "No verified accuracy, throughput, document-volume or cost-saving figures are available, so none are claimed.",
+    "The exact fallback trigger conditions and output schema are not specified in the source material.",
+    "Details are anonymised; client and document specifics are confidential."
+  ],
+  "future_improvements": [
+    "Possible direction: a labelled evaluation set to measure extraction accuracy per field.",
+    "Possible direction: logging of fallback rates to tune the cost/latency/quality balance."
+  ],
+  "related_skills": ["OCR", "Surya OCR", "Qwen2.5", "OpenAI API", "Invoice Classification", "Structured Data Extraction", "FastAPI"],
+  "related_projects": ["financial-statement-extraction", "rag-chatbots"],
+  "links": []
+}

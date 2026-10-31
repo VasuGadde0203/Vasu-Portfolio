@@ -1,0 +1,25 @@
+{
+  "_comment": "Small hand-written evaluation set derived from Vasu_Resume.pdf. It checks retrieval and abstention behaviour; it does not prove complete factual accuracy.",
+  "answerable": [
+    {"q": "What is Vasu's current role?", "expect_docs": ["experience-jhs-associates", "profile"], "must_mention": ["Data Scientist & AI Engineer"]},
+    {"q": "When did he join JHS & Associates LLP?", "expect_docs": ["experience-jhs-associates"], "must_mention": ["July 2025"]},
+    {"q": "What did he work on at Supermoney Advisors?", "expect_docs": ["experience-supermoney-advisors"], "must_mention": ["conversational AI"]},
+    {"q": "What technologies are documented for his invoice processing project?", "expect_docs": ["project-invoice-extraction"], "must_mention": ["Surya OCR", "Qwen2.5"]},
+    {"q": "What does his RAG chatbot experience involve?", "expect_docs": ["project-rag-chatbots"], "must_mention": ["chunking", "vector search"]},
+    {"q": "What did he contribute to the recruitment automation platform?", "expect_docs": ["project-recruitment-automation"], "must_mention": ["resume parsing", "semantic"]},
+    {"q": "What education does he have?", "expect_docs": ["education"], "must_mention": ["University of Mumbai"]},
+    {"q": "What cloud deployment technologies are documented?", "expect_docs": ["skills", "experience-supermoney-advisors"], "must_mention": ["AWS", "Docker"], "needs_semantic_embeddings": true}
+  ],
+  "unanswerable": [
+    {"q": "What was the exact accuracy of his invoice extraction system?"},
+    {"q": "How many documents did his system process per day?"},
+    {"q": "What was his exact salary?"},
+    {"q": "What are his unlisted GitHub repositories?"},
+    {"q": "What were the exact business savings from his automation projects?"}
+  ],
+  "follow_ups": [
+    {"history": ["Explain Vasu's invoice processing project."], "q": "What did he use for OCR?", "expect_project": "invoice-extraction"},
+    {"history": ["Tell me about his recruitment automation platform."], "q": "What database does it use?", "expect_project": "recruitment-automation"}
+  ],
+  "forbidden_patterns_in_answers": ["\\d+(\\.\\d+)?\\s?%", "\\$\\s?\\d", "per day", "per month", "users"]
+}

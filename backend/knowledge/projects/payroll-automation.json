@@ -1,0 +1,43 @@
+{
+  "id": "payroll-automation",
+  "title": "Payroll Review and Reconciliation",
+  "category": "Workflow Automation / Data Processing",
+  "filters": ["Automation", "Data Processing"],
+  "featured": false,
+  "employer": "jhs-associates",
+  "confidential": true,
+  "aliases": ["payroll", "reconciliation", "ope", "ope approval", "spreadsheet", "pandas"],
+  "summary": "Automated payroll review and spreadsheet reconciliation workflows with Python and Pandas, plus an OPE approval PDF export system.",
+  "technologies": ["Python", "Pandas", "Spreadsheets", "PDF export"],
+  "overview": "A workflow-automation project at JHS & Associates LLP covering payroll review, spreadsheet reconciliation and an OPE approval PDF export system.",
+  "problem": "Payroll review and reconciling spreadsheets are repetitive, detail-heavy tasks. Automating them reduces manual handling.",
+  "approach": [
+    "Automated payroll review and spreadsheet reconciliation workflows using Python and Pandas.",
+    "Built an OPE approval PDF export system as part of the workflow."
+  ],
+  "architecture": [
+    {"label": "Data processing", "detail": "Python and Pandas process spreadsheet data.", "status": "documented"},
+    {"label": "Approval output", "detail": "An OPE approval PDF export system produces approval documents.", "status": "documented"},
+    {"label": "Rules, input formats, validation checks and what OPE stands for", "detail": "Not specified in the source material.", "status": "unspecified"}
+  ],
+  "workflow": [
+    {"step": "Payroll spreadsheets are read and reviewed with Python and Pandas.", "status": "documented"},
+    {"step": "Spreadsheet data is reconciled.", "status": "documented"},
+    {"step": "An OPE approval PDF is exported.", "status": "documented"}
+  ],
+  "contribution": {
+    "type": "Automated",
+    "items": ["Automated payroll review and spreadsheet reconciliation workflows and the OPE approval PDF export system."]
+  },
+  "limitations": [
+    "No employee payroll data is published. Only the documented workflow is described.",
+    "No time-saving, volume or accuracy figures are claimed.",
+    "Reconciliation rules are not specified."
+  ],
+  "future_improvements": [
+    "Possible direction: automated reconciliation tests on synthetic data."
+  ],
+  "related_skills": ["Python", "Pandas", "Workflow Automation"],
+  "related_projects": ["financial-statement-extraction", "expense-sheet-extraction"],
+  "links": []
+}
