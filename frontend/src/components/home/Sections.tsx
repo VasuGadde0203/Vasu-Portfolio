@@ -73,7 +73,6 @@ export function AboutSection() {
               </li>
             ))}
           </ul>
-          <p className="mt-2 text-[11px] text-muted">"2+ years" is as stated on the resume.</p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a className={buttonClasses.secondary} href={c.resume_url ?? "/Vasu_Resume.pdf"} download>
               Download resume <Download width={14} height={14} />

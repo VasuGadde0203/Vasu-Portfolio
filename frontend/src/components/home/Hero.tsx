@@ -22,25 +22,35 @@ const CHIPS = [
 function HeroVisual() {
   const { openChat } = useChatUi();
   return (
-    <div className="relative mx-auto aspect-square w-full max-w-[480px]" aria-label="Diagram of the Ask Vasu AI retrieval pipeline" role="group">
-      <div aria-hidden="true" className="absolute inset-[16%] rounded-full bg-accent-strong/15 blur-3xl" />
-      <div aria-hidden="true" className="absolute inset-[3%] rounded-full border border-line/70" />
-      <div aria-hidden="true" className="absolute inset-[12%] rounded-full border border-dashed border-line/60" />
-      <div aria-hidden="true" className="orbit-arc absolute inset-[3%] rounded-full" />
+    // Large screens: a square stage with rings and floating chips around a centred card.
+    // Phones and tablets: the same content as a normal stacked block (a row of chips, then the card), so nothing overflows.
+    <div className="relative mx-auto w-full max-w-[480px] lg:aspect-square" aria-label="Diagram of the Ask Vasu AI retrieval pipeline" role="group">
+      <div aria-hidden="true" className="absolute inset-0 rounded-3xl bg-accent-strong/10 blur-3xl lg:inset-[16%] lg:rounded-full lg:bg-accent-strong/15" />
+      <div aria-hidden="true" className="absolute inset-[3%] hidden rounded-full border border-line/70 lg:block" />
+      <div aria-hidden="true" className="absolute inset-[12%] hidden rounded-full border border-dashed border-line/60 lg:block" />
+      <div aria-hidden="true" className="orbit-arc absolute inset-[3%] hidden rounded-full lg:block" />
 
+      <ul aria-hidden="true" className="relative mb-4 flex flex-wrap justify-center gap-2 lg:hidden">
+        {CHIPS.map((c) => (
+          <li key={c.label} className="glass flex items-center gap-2 rounded-xl border border-line px-3 py-1.5 text-xs font-medium">
+            <span className="h-2 w-2 rounded-full bg-accent-strong" />
+            {c.label}
+          </li>
+        ))}
+      </ul>
       {CHIPS.map((c) => (
         <span
           key={c.label}
           aria-hidden="true"
           style={{ animationDelay: c.delay }}
-          className={`float-chip glass absolute ${c.cls} flex items-center gap-2 rounded-xl border border-line px-3 py-2 text-xs font-medium shadow-lg shadow-black/30`}
+          className={`float-chip glass absolute ${c.cls} hidden items-center gap-2 rounded-xl border border-line px-3 py-2 text-xs font-medium shadow-lg shadow-black/30 lg:flex`}
         >
           <span className="h-2 w-2 rounded-full bg-accent-strong" />
           {c.label}
         </span>
       ))}
 
-      <div className="glass absolute inset-x-[11%] top-1/2 -translate-y-1/2 rounded-2xl border border-line p-4 shadow-2xl shadow-black/40 sm:p-5">
+      <div className="glass relative rounded-2xl border border-line p-4 shadow-2xl shadow-black/40 sm:p-5 lg:absolute lg:inset-x-[11%] lg:top-1/2 lg:-translate-y-1/2">
         <p className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-accent">
           <Sparkle width={14} height={14} /> Ask Vasu AI
         </p>
